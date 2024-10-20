@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "ION GNSS+ 2024 Best Student Paper Award"
+excerpt: "Won the “ION GNSS+ Student Paper Award” in the 37th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GNSS+ 2024) <br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
