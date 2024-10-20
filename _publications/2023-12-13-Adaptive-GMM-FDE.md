@@ -6,8 +6,8 @@ permalink: /publication/2023-12-13-Adaptive-GMM-FDE
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2023-12-13
 venue: 'IEEE Transactions on Intelligent Vehicles'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://ieeexplore.ieee.org/abstract/document/10121661'
+slidesurl: 'url'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/10648803'
 citation: 'Yan, P., Xia, X., Brizzi, M., Wen, W., & Hsu, L. T. (2024). &quot;Subspace-based Adaptive GMM Error Modeling for Fault-Aware Pseudorange-based Positioning in Urban Canyons&quot;. <i>IEEE Transactions on Intelligent Vehicles</i>, doi: 10.1109/TIV.2024.3450198'
 ---
 
