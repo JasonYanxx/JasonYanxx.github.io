@@ -3,7 +3,7 @@ title: "Subspace-based Adaptive GMM Error Modeling for Fault-Aware Vehicular GNS
 collection: publications
 category: manuscripts
 permalink: /publication/2023-12-13-Adaptive-GMM-FDE
-excerpt: "Some Description <br/><img src='/assets/images/AdpGMM-cover.jpg'>"
+excerpt: "Some Description <br/><img src='/assets/images/AdpGMM-cover.jpg'> width = '500'"
 date: 2023-12-13
 venue: 'IEEE Transactions on Intelligent Vehicles'
 slidesurl: 'url'

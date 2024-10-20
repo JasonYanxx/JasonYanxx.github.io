@@ -1,6 +1,6 @@
 ---
-title: "Pacific PNT 2024"
-excerpt: "Attend ION ITM 2023 (24-27 April 2023, Long Beach, CA) <br/><img src='/images/500x300.png'>"
+title: "ION ITM 2023"
+excerpt: "Attend ION ITM 2023 (24-27 April 2023, Long Beach, CA)"
 collection: portfolio
 ---
 

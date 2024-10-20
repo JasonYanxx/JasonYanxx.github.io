@@ -1,6 +1,6 @@
 ---
 title: "IEEE/ION PLANS 2023"
-excerpt: "Attend IEEE/ION PLANS 2023 (24-27 April 2023, Monterey, CA) <br/><img src='/images/500x300.png'>"
+excerpt: "Attend IEEE/ION PLANS 2023 (24-27 April 2023, Monterey, CA) <br/><img src='/assets/images/PLANS2023_chat.jpg' width = '500' >"
 collection: portfolio
 ---
 
