@@ -1,6 +1,7 @@
 ---
-title: "IEEE/ION PLANS 2023"
-excerpt: "Attend IEEE/ION PLANS 2023 (24-27 April 2023, Monterey, CA) <br/><img src='/assets/images/PLANS2023_chat.jpg' width = '500' >"
+title: "ION ITM 2024"
+date: 2024-01-22
+excerpt: "Invited Paper at ION ITM 2024 (22-25 Jan 2024, Long Beach, CA) <br/><img src='/assets/images/ITM2024_with_Sherman.jpg' width = '500' >"
 collection: portfolio
 ---
 

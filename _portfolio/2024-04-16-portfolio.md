@@ -1,6 +1,7 @@
 ---
-title: "ION ITM 2024"
-excerpt: "Invited Paper at ION ITM 2024 (22-25 Jan 2024, Long Beach, CA) <br/><img src='/assets/images/ITM2024_with_Sherman.jpg' width = '500' >"
+title: "Pacific PNT 2024"
+date: 2024-04-16
+excerpt: "Attend Pacific PNT 2024 (16-18 April 2024, Honolulu, Hawaii) <br/><img src='/assets/images/PNT2024_group_photo.jpg' width = '500' >"
 collection: portfolio
 ---
 

@@ -2,9 +2,9 @@
 title: "Subspace-based Adaptive GMM Error Modeling for Fault-Aware Vehicular GNSS Positioning in Urban Canyons"
 collection: publications
 category: manuscripts
-permalink: /publication/2023-12-13-Adaptive-GMM-FDE
+permalink: /publication/2024-08-26-Adaptive-GMM-FDE
 excerpt: "Some Description <br/><img src='/assets/images/AdpGMM-cover.jpg' width = '500'>"
-date: 2023-12-13
+date: 2024-08-26
 venue: 'IEEE Transactions on Intelligent Vehicles'
 slidesurl: 'url'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10648803'

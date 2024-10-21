@@ -1,6 +1,7 @@
 ---
-title: "Pacific PNT 2024"
-excerpt: "Attend Pacific PNT 2024 (16-18 April 2024, Honolulu, Hawaii) <br/><img src='/assets/images/PNT2024_group_photo.jpg' width = '500' >"
+title: "ION ITM 2023"
+date: 2023-01-24
+excerpt: "Attend ION ITM 2023 (24-27 April 2023, Long Beach, CA)"
 collection: portfolio
 ---
 
