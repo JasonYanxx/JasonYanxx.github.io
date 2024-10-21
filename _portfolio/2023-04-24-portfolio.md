@@ -11,4 +11,4 @@ Presentaion at IEEE/ION PLANS 2023
 <img src='/assets/images/PLANS2023_chat.jpg' width = '900' >
 Photo during coffee chat at IEEE/ION PLANS 2023
 
-[Slide](https://connectpolyu-my.sharepoint.com/:b:/g/personal/21037203r_connect_polyu_hk/ERlwMXv3fElAp-_oNi-q1cMBjKlKC4XaGnjflEtspzC19Q?e=HFiMIF)
+[Slide](https://1drv.ms/b/s!ApRBh2TQx_ySvitiomOnayIHkqPN?e=bwyzCw)

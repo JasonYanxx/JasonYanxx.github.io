@@ -9,45 +9,45 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+EDUCATION
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Satellite Communication and Navigation, The Hong Kong Polytechnic University, 2024 (expected)
+* M.S. in Pattern Recognition and Intelligent System, Wuhan University, 2021
+* B.S. in Communication Engineering, Wuhan University, 2018
 
-Work experience
+HONORS & AWARDS
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Best Student Paper Award in ION GNSS+ 2024 (2024)
+* HKSAR Government Scholarship Fund - Reaching Out Award(2024)
+* ION Student Registration Grants	(2023)
+* PolyU Presidential PhD Fellowship	(2021)
+* Postgraduate Scholarship	(2019)
+* Excellent Bachelor's Thesis	(2018)
+* National Encouragement Scholarship	(2017)
+* Second Price in National College Student Intelligent Car Race	(2017)
+* First Price in National Undergraduate Electronics Design Contest	(2017)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
-Skills
+RESEARCH INTEREST
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Non-Gaussian error modeling, fault detection and integrity monitoring for localization systems
+* Control-aided localization for autonomous vehicles in extreme conditions
+* Intelligent transportation systems
 
-Publications
+
+PUBLICATIONS 
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+PATENTS
+======
+* Jia, T & Yan, P. (2020). Self-adaptive compact image segmentation method of vector road network. (China, CN111815636A).
+* Jia, T & Yan, P. (2020). Urban road traffic flow prediction method and device based on space-time deep learning mode. (China, CN111009129A).
+
+  
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -61,4 +61,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
