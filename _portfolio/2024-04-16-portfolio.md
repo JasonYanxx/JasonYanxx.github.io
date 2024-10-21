@@ -5,4 +5,13 @@ excerpt: "Attend Pacific PNT 2024 (16-18 April 2024, Honolulu, Hawaii) <br/><img
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+<img src='/assets/images/pnt2024_gresentation.jpg' width = '900'>
+Presentaion at Pacific PNT 2024
+
+<img src='/assets/images/PNT2024_group_photo.jpg' width = '900' >
+Group photo at Pacific PNT 2024
+
+<img src='/assets/images/pnt2024_friends.jpg' width = '900'>
+Photo with my friends at Pacific PNT 2024
+
+[Slide](https://1drv.ms/b/s!ApRBh2TQx_ySge5-QEFe0pMzX9bwoQ?e=J0P7bG)

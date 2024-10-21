@@ -5,4 +5,10 @@ excerpt: "Attend IEEE/ION PLANS 2023 (24-27 April 2023, Monterey, CA) <br/><img 
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+<img src='/assets/images/PLANS2023_gresentation.jpg' width = '900'>
+Presentaion at IEEE/ION PLANS 2023
+
+<img src='/assets/images/PLANS2023_chat.jpg' width = '900' >
+Photo during coffee chat at IEEE/ION PLANS 2023
+
+[Slide](https://connectpolyu-my.sharepoint.com/:b:/g/personal/21037203r_connect_polyu_hk/ERlwMXv3fElAp-_oNi-q1cMBjKlKC4XaGnjflEtspzC19Q?e=HFiMIF)
