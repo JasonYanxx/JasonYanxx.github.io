@@ -21,7 +21,7 @@ repository               : "jasonyanxx.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Penggao Yan"
   pronouns         : # example: "she/her"  
   bio              : "PhD candidate in HK PolyU, working on navigation integrity"
