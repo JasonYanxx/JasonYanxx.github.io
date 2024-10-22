@@ -40,14 +40,13 @@ PUBLICATIONS
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 
 PATENTS
 ======
 * Jia, T & Yan, P. (2020). Self-adaptive compact image segmentation method of vector road network. (China, CN111815636A).
 * Jia, T & Yan, P. (2020). Urban road traffic flow prediction method and device based on space-time deep learning mode. (China, CN111009129A).
 
-  
 <!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
