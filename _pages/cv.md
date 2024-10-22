@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-EDUCATIONS
+EDUCATION
 ======
 * Ph.D in Satellite Communication and Navigation, The Hong Kong Polytechnic University, 2024 (expected)
 * M.S. in Pattern Recognition and Intelligent System, Wuhan University, 2021
