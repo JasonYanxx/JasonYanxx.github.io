@@ -47,3 +47,6 @@ If you want to contat me, please leave Message here
 -----
 
 {% include contact-by-email.html %}
+
+
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=f1GI2dD0dhAb8ATmeK-RQ7f25vrqMflwGj-aU6XMQv0"></script>
