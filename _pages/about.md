@@ -48,5 +48,7 @@ If you want to contat me, please leave Message here
 
 {% include contact-by-email.html %}
 
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=f1GI2dD0dhAb8ATmeK-RQ7f25vrqMflwGj-aU6XMQv0&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
 
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=f1GI2dD0dhAb8ATmeK-RQ7f25vrqMflwGj-aU6XMQv0"></script>
+
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?w=300&d=f1GI2dD0dhAb8ATmeK-RQ7f25vrqMflwGj-aU6XMQv0"></script>
