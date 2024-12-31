@@ -31,6 +31,7 @@ Research Interests
 
 News [Month/Year]
 ======
+- [12/2024] 1 Paper was accepted in **IEEE Sensors Journal**.
 - [11/2024] 1 Paper was accepted in **Journal of the Operational Research Society**. [Link](https://www.tandfonline.com/doi/full/10.1080/01605682.2024.2423362)
 - [10/2024] 1 Paper was accepted in **NAVIGATION: Journal of the Institute of Navigation**. [Link](https://jasonyanxx.github.io/publication/2024-10-18-FDE-GMM)
 - [09/2024] I am glad to announce that I won the **ION GNSS+ Student Paper Award** in the 37th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GNSS+ 2024). [Link](https://jasonyanxx.github.io/portfolio/2024-09-20-portfolio)
