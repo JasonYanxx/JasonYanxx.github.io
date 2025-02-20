@@ -8,7 +8,7 @@ date: 2024-08-26
 venue: 'IEEE Transactions on Intelligent Vehicles'
 slidesurl: 'url'
 paperurl: '/files/Subspace-basedAdaptiveGMMErrorModelingforFault-AwarePseudorange-basedPositioninginUrbanCanyons.pdf'
-citation: 'Yan, P., Xia, X., Brizzi, M., Wen, W., & Hsu, L. T. (2024). &quot;Subspace-based Adaptive GMM Error Modeling for Fault-Aware Pseudorange-based Positioning in Urban Canyons&quot;. <i>IEEE Transactions on Intelligent Vehicles</i>, [doi: 10.1109/TIV.2024.3450198](http://dx.doi.org/10.1109/TIV.2024.3450198)'
+citation: 'Yan, P., Xia, X., Brizzi, M., Wen, W., & Hsu, L. T. (2024). &quot;Subspace-based Adaptive GMM Error Modeling for Fault-Aware Pseudorange-based Positioning in Urban Canyons&quot;. <i>IEEE Transactions on Intelligent Vehicles</i>, http://dx.doi.org/10.1109/TIV.2024.3450198'
 ---
 
 
