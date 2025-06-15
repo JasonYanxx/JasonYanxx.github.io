@@ -11,7 +11,7 @@ redirect_from:
 
 EDUCATION
 ======
-* Ph.D in Satellite Communication and Navigation, The Hong Kong Polytechnic University, 2024 (expected)
+* Ph.D in Satellite Communication and Navigation, The Hong Kong Polytechnic University, 2025
 * M.S. in Pattern Recognition and Intelligent System, Wuhan University, 2021
 * B.S. in Communication Engineering, Wuhan University, 2018
 

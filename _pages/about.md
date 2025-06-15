@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Penggao Yan is a Ph.D. Candidate at the Department of Aeronautical and Aviation Engineering, Faculty of Engineering, Hong Kong Polytechnic University. He received the bachelor’s degree in Communication Engineering in 2018 and the master’s degree in Pattern Recognition and Intelligent Systems in 2021, both from Wuhan University, China. 
+Penggao Yan is a postdoctoral fellow in the Intelligent Positioning and Navigation Lab at The Hong Kong Polytechnic University. He received the bachelor’s degree in Communication Engineering in 2018 and the master’s degree in Pattern Recognition and Intelligent Systems in 2021, both from Wuhan University, China. He received his Ph.D. degree at the Department of Aeronautical and Aviation Engineering, Faculty of Engineering, Hong Kong Polytechnic University.
 
 He was one the four winners of the 2024 ION GNSS+ [**Best Student Paper Award**](https://jasonyanxx.github.io/portfolio/2024-09-20-portfolio). Recognized industry and academic experts selected winners based on the basis of technical content and clarity of manuscript.
 
