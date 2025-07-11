@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Penggao Yan is a postdoctoral fellow in the Intelligent Positioning and Navigation Lab at The Hong Kong Polytechnic University. He received the bachelor’s degree in Communication Engineering in 2018 and the master’s degree in Pattern Recognition and Intelligent Systems in 2021, both from Wuhan University, China. He received his Ph.D. degree at the Department of Aeronautical and Aviation Engineering, Faculty of Engineering, Hong Kong Polytechnic University.
+Penggao Yan is a postdoctoral fellow in the Intelligent Positioning and Navigation Lab at The Hong Kong Polytechnic University. He received the bachelor’s degree in Communication Engineering in 2018 and the master’s degree in Pattern Recognition and Intelligent Systems in 2021, both from Wuhan University, China. He received his Ph.D. degree in 2025 in Aeronautical and Aviation Engineering from The Hong Kong Polytechnic University.
 
 He was one the four winners of the 2024 ION GNSS+ [**Best Student Paper Award**](https://jasonyanxx.github.io/portfolio/2024-09-20-portfolio). Recognized industry and academic experts selected winners based on the basis of technical content and clarity of manuscript.
 
@@ -20,6 +20,7 @@ Research Interests
   - Theoretic-guanrateed non-Gaussian detector. [Link](https://jasonyanxx.github.io/publication/2024-09-16-GNSS-2024)
   - Simultaneous adaptive error modeling and fault detection and exclusion. [Link](https://jasonyanxx.github.io/publication/2024-08-26-Adaptive-GMM-FDE)
 
+- Credible uncertainty quantification and robust state estimation for multi-sensor fusion systems
 
 - Control-aided localization for autonomous vehicles in extreme conditions
   - Integration of system identification and vehicle dynamic models. [Link1](https://jasonyanxx.github.io/publication/2023-05-08-SI) [Link2](https://jasonyanxx.github.io/publication/2023-04-24-PLANS-2023)
@@ -31,6 +32,7 @@ Research Interests
 
 News [Month/Year]
 ======
+- [06/2024] Give a presentation at the [3rd iLoc Workshop](https://sites.google.com/view/iloc-2025) in IEEE Intelligent Vehicles Symposium (IV) 2025.
 - [12/2024] 1 Paper was accepted in **IEEE Sensors Journal**. [Link](https://jasonyanxx.github.io/publication/2024-10-21-MFDI)
 - [11/2024] 1 Paper was accepted in **Journal of the Operational Research Society**. [Link](https://www.tandfonline.com/doi/full/10.1080/01605682.2024.2423362)
 - [10/2024] 1 Paper was accepted in **NAVIGATION: Journal of the Institute of Navigation**. [Link](https://jasonyanxx.github.io/publication/2024-10-18-FDE-GMM)
