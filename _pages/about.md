@@ -32,7 +32,17 @@ Research Interests
 
 News [Month/Year]
 ======
-- [06/2024] Give a presentation at the [3rd iLoc Workshop](https://sites.google.com/view/iloc-2025) in IEEE Intelligent Vehicles Symposium (IV) 2025.
+- [10/2025] 1 Paper was accepted in **IEEE Transactions on Intelligent Transportation Systems**. [link](https://ieeexplore.ieee.org/abstract/document/11198846)
+- [09/2025] 1 Paper was submitted to **ArXiv**: Credible Uncertainty Quantification under Noise and System Model Mismatch. [link](https://arxiv.org/abs/2509.03311)
+- [09/2025] Serve as a session chair for the session "AI-Driven Positioning and Navigation" at the [ION GNSS+ 2025](https://www.ion.org/gnss/sessions.cfm?sessionID=1898).
+- [09/2025] Give a presentation at the [ION GNSS+ 2025](https://www.ion.org/gnss/abstracts.cfm?paperID=15890).
+- [07/2025] Give a presentation at the [ICASSE 2025](https://icasse.sjtu.edu.cn/).
+- [07/2025] Give an invited talk at NTU Satellite Research Centre (SaRC).
+- [07/2025] 1 Paper was submitted to **ArXiv**: High-Availability Integrity Monitoring for Multi-Constellation GNSS Navigation with Non-Gaussian Errors. [link](https://arxiv.org/abs/2507.04284)
+- [07/2025] 1 Paper was submitted to **ArXiv**: An Efficient Detector for Faulty GNSS Measurements Detection With Non-Gaussian Noises. [link](https://arxiv.org/abs/2507.03987)
+- [06/2025] 1 Paper was accepted in **GIScience & Remote Sensing**. [Link](https://www.tandfonline.com/doi/full/10.1080/15481603.2025.2514330)
+- [06/2025] Give a presentation at the [3rd iLoc Workshop](https://sites.google.com/view/iloc-2025) in IEEE Intelligent Vehicles Symposium (IV) 2025.
+- [04/2025] I Paper was accepted in the Proceedings of the 2025 IEEE/ION Position, Location and Navigation Symposium (PLANS) 2025. [Link](https://ieeexplore.ieee.org/abstract/document/11028215)
 - [12/2024] 1 Paper was accepted in **IEEE Sensors Journal**. [Link](https://jasonyanxx.github.io/publication/2024-10-21-MFDI)
 - [11/2024] 1 Paper was accepted in **Journal of the Operational Research Society**. [Link](https://www.tandfonline.com/doi/full/10.1080/01605682.2024.2423362)
 - [10/2024] 1 Paper was accepted in **NAVIGATION: Journal of the Institute of Navigation**. [Link](https://jasonyanxx.github.io/publication/2024-10-18-FDE-GMM)
@@ -53,5 +63,4 @@ If you want to contat me, please leave Message here
 {% include contact-by-email.html %}
 
 
-
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=f1GI2dD0dhAb8ATmeK-RQ7f25vrqMflwGj-aU6XMQv0'></script>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=f1GI2dD0dhAb8ATmeK-RQ7f25vrqMflwGj-aU6XMQv0&cl=ffffff&w=a"></script>
