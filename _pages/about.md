@@ -63,4 +63,4 @@ If you want to contat me, please leave Message here
 {% include contact-by-email.html %}
 
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=f1GI2dD0dhAb8ATmeK-RQ7f25vrqMflwGj-aU6XMQv0&cl=ffffff&w=a"></script>
+<a href="https://clustrmaps.com/site/1c1wi"  title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=f1GI2dD0dhAb8ATmeK-RQ7f25vrqMflwGj-aU6XMQv0&cl=ffffff" /></a>
