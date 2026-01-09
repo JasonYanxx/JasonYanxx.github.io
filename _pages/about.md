@@ -32,6 +32,9 @@ Research Interests
 
 News [Month/Year]
 ======
+- [01/2026] Serve as a session chair for the session "Innovations in Navigation for Smartphones and Wearables" at the [ION ITM 2026](https://www.ion.org/itm/sessions.cfm?sessionID=1970).
+- [01/2026] 1 Paper was accepted in **Navitation: Journal of the Institute of Navigation**. 
+- [11/2025] Selected as a committee member in “Navigation for Intelligent Vehicles” of IEEE ITS Society Technical Committees. [link](https://ieee-itss.org/chapters-committees/navigation-for-intelligent-vehicles/)
 - [10/2025] 1 Paper was accepted in **IEEE Transactions on Intelligent Transportation Systems**. [link](https://ieeexplore.ieee.org/abstract/document/11198846)
 - [09/2025] 1 Paper was submitted to **ArXiv**: Credible Uncertainty Quantification under Noise and System Model Mismatch. [link](https://arxiv.org/abs/2509.03311)
 - [09/2025] Serve as a session chair for the session "AI-Driven Positioning and Navigation" at the [ION GNSS+ 2025](https://www.ion.org/gnss/sessions.cfm?sessionID=1898).
