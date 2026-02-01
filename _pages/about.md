@@ -32,6 +32,8 @@ Research Interests
 
 News [Month/Year]
 ======
+- [02/2026] 1 Paper was accepted in **Aerospace Systems**: Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors. [link](https://arxiv.org/abs/2507.04284)
+- [01//2026] Give a presentation at the [ION ITM 2026](https://www.ion.org/itm/abstracts.cfm?paperID=16244&sessionID=1965).
 - [01/2026] Serve as a session chair for the session "Innovations in Navigation for Smartphones and Wearables" at the [ION ITM 2026](https://www.ion.org/itm/sessions.cfm?sessionID=1970).
 - [01/2026] 1 Paper was accepted in **Navitation: Journal of the Institute of Navigation**. [link](https://arxiv.org/abs/2601.07299)
 - [11/2025] Selected as a committee member in “Navigation for Intelligent Vehicles” of IEEE ITS Society Technical Committees. [link](https://ieee-itss.org/chapters-committees/navigation-for-intelligent-vehicles/)
@@ -41,7 +43,6 @@ News [Month/Year]
 - [09/2025] Give a presentation at the [ION GNSS+ 2025](https://www.ion.org/gnss/abstracts.cfm?paperID=15890).
 - [07/2025] Give a presentation at the [ICASSE 2025](https://icasse.sjtu.edu.cn/).
 - [07/2025] Give an invited talk at NTU Satellite Research Centre (SaRC).
-- [07/2025] 1 Paper was submitted to **ArXiv**: High-Availability Integrity Monitoring for Multi-Constellation GNSS Navigation with Non-Gaussian Errors. [link](https://arxiv.org/abs/2507.04284)
 - [07/2025] 1 Paper was submitted to **ArXiv**: An Efficient Detector for Faulty GNSS Measurements Detection With Non-Gaussian Noises. [link](https://arxiv.org/abs/2507.03987)
 - [06/2025] 1 Paper was accepted in **GIScience & Remote Sensing**. [Link](https://www.tandfonline.com/doi/full/10.1080/15481603.2025.2514330)
 - [06/2025] Give a presentation at the [3rd iLoc Workshop](https://sites.google.com/view/iloc-2025) in IEEE Intelligent Vehicles Symposium (IV) 2025.
