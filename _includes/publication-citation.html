@@ -1,0 +1,46 @@
+{% comment %}
+  Publication citation block: DOI link, paper/slides downloads, BibTeX with copy button
+  Include in publication pages. Expects: page
+{% endcomment %}
+{% include base_path %}
+<style>
+.bibtex-details { margin-top: 1em; }
+.bibtex-block { background: #f5f5f5; padding: 1em; overflow-x: auto; font-size: 0.85em; border-radius: 4px; }
+.publication__links .btn--small { margin-top: 0.5em; }
+</style>
+
+<div class="publication__links">
+  {% if page.doi %}
+    <p><strong>DOI:</strong> <a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener">https://doi.org/{{ page.doi }}</a></p>
+  {% endif %}
+  {% if page.paperurl %}
+    <p><a href="{% if page.paperurl contains '://' %}{{ page.paperurl }}{% else %}{{ page.paperurl | prepend: base_path }}{% endif %}" class="btn btn--primary" target="_blank" rel="noopener"><i class="fas fa-download" aria-hidden="true"></i> Download Paper</a>
+    {% if page.slidesurl and page.slidesurl contains 'http' %}
+      | <a href="{{ page.slidesurl }}" class="btn btn--info" target="_blank" rel="noopener">Download Slides</a>
+    {% endif %}
+    </p>
+  {% endif %}
+  {% if page.citation %}
+    <p><strong>Recommended citation:</strong><br>{{ page.citation }}</p>
+  {% endif %}
+  {% if page.bibtex %}
+    <details class="bibtex-details">
+      <summary class="btn btn--small">BibTeX</summary>
+      <pre id="bibtex-{{ page.basename }}" class="bibtex-block"><code>{{ page.bibtex | strip | escape }}</code></pre>
+      <button type="button" class="btn btn--small copy-bibtex" data-target="bibtex-{{ page.basename }}" aria-label="Copy BibTeX">Copy</button>
+    </details>
+    <script>
+      document.querySelectorAll('.copy-bibtex').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var targetId = this.getAttribute('data-target');
+          var pre = document.getElementById(targetId);
+          var text = pre ? pre.textContent : '';
+          navigator.clipboard.writeText(text).then(function() {
+            btn.textContent = 'Copied!';
+            setTimeout(function() { btn.textContent = 'Copy'; }, 2000);
+          });
+        });
+      });
+    </script>
+  {% endif %}
+</div>
