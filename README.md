@@ -20,14 +20,41 @@ See more info at https://academicpages.github.io/
 
 ## Running Locally
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+### Prerequisites (macOS)
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+1. Install Ruby 3.1: `brew install ruby@3.1`
+2. Run `bundle install` to install dependencies (from the project root)
+
+### How to Run the Site
+
+From the project root, run:
+
+```bash
+export PATH="/opt/homebrew/opt/ruby@3.1/bin:$PATH"
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+bundle exec jekyll serve
+```
+
+The site will be available at **http://localhost:4000**.
+
+To avoid typing the exports each time, add them to your `~/.zshrc`:
+```bash
+echo 'export PATH="/opt/homebrew/opt/ruby@3.1/bin:$PATH"' >> ~/.zshrc
+echo 'export LANG=en_US.UTF-8' >> ~/.zshrc
+echo 'export LC_ALL=en_US.UTF-8' >> ~/.zshrc
+```
+Then run `source ~/.zshrc` or open a new terminal.
+
+### How to Close the Site
+
+Press **Ctrl+C** in the terminal where Jekyll is running to stop the server.
+
+---
+
+*Alternative setup for Linux:* Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`. You may also need: `sudo apt install build-essential gcc make`. Then run `bundle install` and `bundle exec jekyll serve`.
 
 # Maintenance 
 
