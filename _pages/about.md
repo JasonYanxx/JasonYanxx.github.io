@@ -14,6 +14,7 @@ He was one of the four winners of the 2024 ION GNSS+ [**Best Student Paper Award
 
 Research Interests
 ======
+- Learning-based navigation systems for UAVs
 
 - Non-Gaussian error modeling, fault detection and integrity monitoring for localization systems
   - Non-Gaussian overbound for heavy-tailed error distributions. [Link](/publication/2024-08-26-PGO)
@@ -21,24 +22,26 @@ Research Interests
   - Simultaneous adaptive error modeling and fault detection and exclusion. [Link](/publication/2024-08-26-Adaptive-GMM-FDE)
 
 - Credible uncertainty quantification and robust state estimation for multi-sensor fusion systems
+  - Multi-metric credibility and uncertainty diagnostics under model mismatch. [Link](/publication/2026-03-01-IEEE-TIM-Credible-UQ)
+  - Robust urban GNSS positioning under heavy-tailed errors. [Link1](/publication/2026-03-17-LQLC-Urban-GNSS) [Link2](/publication/2026-03-20-LAH-GNSS)
 
 - Control-aided localization for autonomous vehicles in extreme conditions
   - Integration of system identification and vehicle dynamic models. [Link1](/publication/2023-05-08-SI) [Link2](/publication/2023-04-24-PLANS-2023)
 
-
 - Collaborative positioning and integrity monitoring in urban areas
-
 
 
 News [Month/Year]
 ======
+- [03/2026] 1 Paper was accepted by **IEEE Transactions on Instrumentation and Measurement**: Credible Uncertainty Quantification under Noise and System Model Mismatch. [link](/publication/2026-03-01-IEEE-TIM-Credible-UQ)
+- [03/2026] 1 Paper was submitted to **ArXiv**: Logistic-aided Huber M-estimator for robust GNSS positioning. [link](/publication/2026-03-20-LAH-GNSS)
+- [03/2026] 1 Paper was submitted to **ArXiv**: Improved GNSS Positioning in Urban Environments Using a Logistic Error Model. [link](/publication/2026-03-17-LQLC-Urban-GNSS)
 - [02/2026] 1 Paper was accepted in **Aerospace Systems**: Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors. [link](/publication/2026-01-15-Jackknife-ARAIM)
 - [01//2026] Give a presentation at the [ION ITM 2026](https://www.ion.org/itm/abstracts.cfm?paperID=16244&sessionID=1965).
 - [01/2026] Serve as a session chair for the session "Innovations in Navigation for Smartphones and Wearables" at the [ION ITM 2026](https://www.ion.org/itm/sessions.cfm?sessionID=1970).
 - [01/2026] 1 Paper was accepted in **NAVIGATION: Journal of the Institute of Navigation**. [link](/publication/2026-01-08-Cauchy-Overbound)
 - [11/2025] Selected as a committee member in “Navigation for Intelligent Vehicles” of IEEE ITS Society Technical Committees. [link](https://ieee-itss.org/chapters-committees/navigation-for-intelligent-vehicles/)
 - [10/2025] 1 Paper was accepted in **IEEE Transactions on Intelligent Transportation Systems**. [link](https://ieeexplore.ieee.org/abstract/document/11198846)
-- [09/2025] 1 Paper was submitted to **ArXiv**: Credible Uncertainty Quantification under Noise and System Model Mismatch. [link](https://arxiv.org/abs/2509.03311)
 - [09/2025] Serve as a session chair for the session "AI-Driven Positioning and Navigation" at the [ION GNSS+ 2025](https://www.ion.org/gnss/sessions.cfm?sessionID=1898).
 - [09/2025] Give a presentation at the [ION GNSS+ 2025](https://www.ion.org/gnss/abstracts.cfm?paperID=15890).
 - [07/2025] Give a presentation at the [ICASSE 2025](https://icasse.sjtu.edu.cn/).
