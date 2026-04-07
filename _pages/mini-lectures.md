@@ -3,6 +3,7 @@ layout: single
 title: "Mini-lectures"
 permalink: /mini-lectures/
 author_profile: true
+description: "Short video lectures by Penggao Yan on GNSS integrity monitoring, positioning, and estimation fundamentals."
 redirect_from:
   - /videos/
 ---

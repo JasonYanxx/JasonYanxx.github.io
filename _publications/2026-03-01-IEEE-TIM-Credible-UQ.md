@@ -3,7 +3,7 @@ title: "Credible Uncertainty Quantification under Noise and System Model Mismatc
 collection: publications
 category: manuscripts
 permalink: /publication/2026-03-01-IEEE-TIM-Credible-UQ
-excerpt: "Unified NCI, NLL, and ES framework with empirical location test (ELT) and directional probing to diagnose noise vs. system model mismatch <br/><img src='/assets/images/TIM-Credible-UQ-cover.png'  width = '800'>"
+excerpt: "Unified NCI, NLL, and ES framework with empirical location test (ELT) and directional probing to diagnose noise vs. system model mismatch <br/><img src='/assets/images/TIM-Credible-UQ-cover.png' alt='Cover image for the credible uncertainty quantification paper' width='800'>"
 date: 2026-03-01
 venue: 'IEEE Transactions on Instrumentation and Measurement'
 paperurl: 'https://arxiv.org/abs/2509.03311'
@@ -32,7 +32,7 @@ bibtex: |
 **Contribution 2**: **Directional probing** scales reported covariances and compares **NLL/ES** responses to classify optimism, pessimism, and SMM.  
 **Key result**: Simulations across six credibility scenarios reach **80%–100%** diagnosis accuracy and beat single-metric methods; a **real UWB positioning** study shows identification of **coexisting pessimism and SMM** where classical NEES/NCI are insufficient; complexity and scalability (including high state dimension) are analyzed.
 
-<img src='/assets/images/TIM-Credible-UQ-cover.png' width = '900'>
+<img src='/assets/images/TIM-Credible-UQ-cover.png' alt='Framework figure for credible uncertainty quantification' width='900'>
 The framework for diagnosing NMM and SMM in a unified multi-metric framework.
 
 🎯 **Takeaway**: Multi-metric credibility with ELT plus directional probing is a practical validation layer when you need to know *whether* and *why* reported uncertainty is wrong.

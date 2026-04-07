@@ -3,7 +3,7 @@ title: "Improved GNSS Positioning in Urban Environments Using a Logistic Error M
 collection: publications
 category: manuscripts
 permalink: /publication/2026-03-17-LQLC-Urban-GNSS
-excerpt: "Logistic pseudorange errors and the Least Quasi-Log-Cosh (LQLC) M-estimator with IRLS for urban GNSS, validated in light, medium, and deep urban Hong Kong data <br/><img src='/assets/images/LQLC-urban-GNSS-cover.png' width = '800'>"
+excerpt: "Logistic pseudorange errors and the Least Quasi-Log-Cosh (LQLC) M-estimator with IRLS for urban GNSS, validated in light, medium, and deep urban Hong Kong data <br/><img src='/assets/images/LQLC-urban-GNSS-cover.png' alt='Cover image for the LQLC urban GNSS paper' width='800'>"
 date: 2026-03-17
 venue: 'ArXiv'
 paperurl: 'https://arxiv.org/abs/2603.16420'
@@ -35,7 +35,7 @@ bibtex: |
 **Contribution 2**: LQLC minimizes \\(\sum_i \ln(\cosh(\bar{r}_i)+1)\\); weights \\(w(r)=\tanh(r/2)/r\\) shrink influence for large normalized residuals.  
 **Contribution 3**: Real SPP tests (GPS + Beidou L1, u-blox F9P vs. SPAN-CPT truth): **3D RMSE** improves by about **11%–31%** and **3D STD** by about **27%–61%** vs. LS; runtime stays **real-time** compatible. 
 
-<img src='/assets/images/LQLC-urban-GNSS-cover.png' width = '900'>
+<img src='/assets/images/LQLC-urban-GNSS-cover.png' alt='Overview figure for the LQLC urban GNSS method' width='900'>
 Positioning results of LQLC vs. LS on real urban GNSS data in Hong Kong.
 
 🎯 **Takeaway**: Logistic error modeling yields a practical robust urban GNSS estimator with clear tuning guidance and measured gains over LS across urban severity levels.

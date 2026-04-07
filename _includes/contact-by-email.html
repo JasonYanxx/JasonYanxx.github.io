@@ -1,16 +1,15 @@
-<!-- modify this form HTML and place wherever you want your form -->
 <form
-action="https://formspree.io/f/mwkgkwgk"
-method="POST"
+  action="https://formspree.io/f/mwkgkwgk"
+  method="POST"
+  class="contact-form"
 >
-<label>
-  Your email:
-  <input type="email" name="email">
-</label>
-<label>
-  Your message:
-  <textarea name="message"></textarea>
-</label>
-<!-- your other form fields go here -->
-<button type="submit">Send</button>
+  <label class="contact-form__field">
+    <span>Your email</span>
+    <input type="email" name="email" autocomplete="email" required placeholder="name@institution.edu">
+  </label>
+  <label class="contact-form__field">
+    <span>Your message</span>
+    <textarea name="message" rows="6" required placeholder="How can we work together?"></textarea>
+  </label>
+  <button type="submit" class="btn btn--primary">Send message</button>
 </form>

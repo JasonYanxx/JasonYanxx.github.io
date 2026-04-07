@@ -3,7 +3,7 @@ title: "Cauchy-Gaussian Overbound for Heavy-tailed GNSS Measurement Errors"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-01-08-Cauchy-Overbound
-excerpt: "Leveraging the bounding sharpness of the Cauchy distribution in the core and the Gaussian distribution in the tails to tightly bound heavy-tailed GNSS measurement errors <br/><img src='/assets/images/Cauchy-Overbound-cover.jpg' width = '800'>"
+excerpt: "Leveraging the bounding sharpness of the Cauchy distribution in the core and the Gaussian distribution in the tails to tightly bound heavy-tailed GNSS measurement errors <br/><img src='/assets/images/Cauchy-Overbound-cover.jpg' alt='Cover image for the Cauchy Gaussian overbounding paper' width='800'>"
 date: 2026-01-08
 venue: 'NAVIGATION: Journal of the Institute of Navigation'
 paperurl: 'https://navi.ion.org/content/73/1/navi.749'
@@ -26,7 +26,7 @@ bibtex: |
 **Core contribution**: A hybrid **Cauchy-Gaussian overbound** that uses Cauchy for the sharp core and Gaussian for the tails.  
 **Achieved goal**: Tighter, integrity-preserving error bounds for both symmetric and asymmetric heavy-tailed distributions.
 
-<img src='/assets/images/Cauchy-Gaussian-comparison.png' width = '900'>
+<img src='/assets/images/Cauchy-Gaussian-comparison.png' alt='Comparison between Cauchy and Gaussian overbounding components' width='900'>
 Comparison between the standard Cauchy and Gaussian distributions, through (a) PDF and (b) folded CDF
 on a logarithmic scale.
 
@@ -40,7 +40,7 @@ on a logarithmic scale.
 **Contribution 2**: Transits tangentially to a Gaussian distribution to safely bound the tails.  
 **Key result**: Reduced Vertical Protection Level (VPL) by **15%** (symmetric errors) and **21–47%** (asymmetric errors) vs. baselines.
 
-<img src='/assets/images/Cauchy-performance.png' width = '900'>
+<img src='/assets/images/Cauchy-performance.png' alt='Performance results for the Cauchy Gaussian overbounding method' width='900'>
 (a) Quantile-scale CDF showing empirical DGNSS error in urban areas are heavy-tailed; (b) CDF of the two-step Gaussian overbound, NavDEN overbound, and the Cauchy-Gaussian overbound; (c) VPL produced by the three overbounds at PHMI of 10^-9.
 
 🎯 **Takeaway**: Combining Cauchy sharpness with Gaussian tails creates a tighter, safer bound for urban GNSS integrity.
