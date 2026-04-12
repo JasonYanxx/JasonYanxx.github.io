@@ -56,12 +56,16 @@
     {% endif %}
     
     {% if post.collection == 'publications' %}
+      {% assign publisher_href = post.publisherurl %}
+      {% unless publisher_href contains '://' %}{% assign publisher_href = post.publisherurl | prepend: base_path %}{% endunless %}
       {% assign paper_href = post.paperurl %}
       {% unless paper_href contains '://' %}{% assign paper_href = post.paperurl | prepend: base_path %}{% endunless %}
       <p>
-        {% if post.doi %}<a href="https://doi.org/{{ post.doi }}" target="_blank" rel="noopener">DOI</a>{% if post.paperurl or post.slidesurl %} | {% endif %}{% endif %}
-        {% if post.paperurl %}<a href="{{ paper_href }}" target="_blank" rel="noopener">Download Paper</a>{% if post.slidesurl and post.slidesurl contains 'http' %} | {% endif %}{% endif %}
-        {% if post.slidesurl and post.slidesurl contains 'http' %}<a href="{{ post.slidesurl }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+        {% assign has_link = false %}
+        {% if post.doi %}<a href="https://doi.org/{{ post.doi }}" target="_blank" rel="noopener">DOI</a>{% assign has_link = true %}{% endif %}
+        {% if post.publisherurl %}{% if has_link %} | {% endif %}<a href="{{ publisher_href }}" target="_blank" rel="noopener">{{ post.publisherlabel | default: "Published Version" }}</a>{% assign has_link = true %}{% endif %}
+        {% if post.paperurl %}{% if has_link %} | {% endif %}<a href="{{ paper_href }}" target="_blank" rel="noopener">{{ post.paperlabel | default: "Download Paper" }}</a>{% assign has_link = true %}{% endif %}
+        {% if post.slidesurl and post.slidesurl contains 'http' %}{% if has_link %} | {% endif %}<a href="{{ post.slidesurl }}" target="_blank" rel="noopener">Slides</a>{% endif %}
       </p>
     {% elsif post.citation and post.paperurl and post.slidesurl and post.slidesurl contains 'http' %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>

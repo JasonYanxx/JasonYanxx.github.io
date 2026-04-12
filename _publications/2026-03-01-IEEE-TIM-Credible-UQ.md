@@ -6,14 +6,21 @@ permalink: /publication/2026-03-01-IEEE-TIM-Credible-UQ
 excerpt: "Unified NCI, NLL, and ES framework with empirical location test (ELT) and directional probing to diagnose noise vs. system model mismatch <br/><img src='/assets/images/TIM-Credible-UQ-cover.png' alt='Cover image for the credible uncertainty quantification paper' width='800'>"
 date: 2026-03-01
 venue: 'IEEE Transactions on Instrumentation and Measurement'
+doi: '10.1109/TIM.2026.3682809'
+publisherurl: 'https://ieeexplore.ieee.org/document/11479287'
+publisherlabel: 'Published Version'
 paperurl: 'https://arxiv.org/abs/2509.03311'
-citation: 'Yan, P., Zhan, X., Sun, R., & Hsu, L. T. (2026). &quot;Credible Uncertainty Quantification under Noise and System Model Mismatch&quot;. <i>IEEE Transactions on Instrumentation and Measurement</i>.'
+paperlabel: 'arXiv'
+citation: 'Yan, P., Zhan, X., Sun, R., & Hsu, L.-T. (2026). &quot;Credible Uncertainty Quantification under Noise and System Model Mismatch&quot;. <i>IEEE Transactions on Instrumentation and Measurement</i>, 1-1. https://doi.org/10.1109/TIM.2026.3682809'
 bibtex: |
   @article{yan2026credible,
     author = {Yan, Penggao and Zhan, Xingqun and Sun, Rui and Hsu, Li-Ta},
     title = {Credible Uncertainty Quantification under Noise and System Model Mismatch},
     journal = {IEEE Transactions on Instrumentation and Measurement},
-    year = {2026}
+    year = {2026},
+    pages = {1--1},
+    doi = {10.1109/TIM.2026.3682809},
+    url = {https://doi.org/10.1109/TIM.2026.3682809}
   }
 ---
 

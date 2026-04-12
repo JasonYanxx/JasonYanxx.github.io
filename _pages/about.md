@@ -129,7 +129,7 @@ redirect_from:
 ## Recent News
 
 <ul class="news-list">
-  <li><strong>03/2026:</strong> Paper accepted by <em>IEEE Transactions on Instrumentation and Measurement</em>: <a href="/publication/2026-03-01-IEEE-TIM-Credible-UQ">Credible Uncertainty Quantification under Noise and System Model Mismatch</a>.</li>
+  <li><strong>04/2026:</strong> Paper published in <em>IEEE Transactions on Instrumentation and Measurement</em>: <a href="/publication/2026-03-01-IEEE-TIM-Credible-UQ">Credible Uncertainty Quantification under Noise and System Model Mismatch</a>.</li>
   <li><strong>03/2026:</strong> Paper submitted to <em>arXiv</em>: <a href="/publication/2026-03-20-LAH-GNSS">Logistic-aided Huber M-estimator for robust GNSS positioning</a>.</li>
   <li><strong>03/2026:</strong> Paper submitted to <em>arXiv</em>: <a href="/publication/2026-03-17-LQLC-Urban-GNSS">Improved GNSS Positioning in Urban Environments Using a Logistic Error Model</a>.</li>
   <li><strong>02/2026:</strong> Paper accepted in <em>Aerospace Systems</em>: <a href="/publication/2026-01-15-Jackknife-ARAIM">Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors</a>.</li>
