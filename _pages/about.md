@@ -7,8 +7,8 @@ author_profile: true
 header:
   overlay_image: /assets/images/mybanner.jpg
   overlay_filter: rgba(10, 28, 51, 0.58)
-  cta_label: "Download CV"
-  cta_url: /files/CV_YAN_PengGao.pdf
+  cta_label: "View CV"
+  cta_url: /cv/
 redirect_from:
   - /about/
   - /about.html

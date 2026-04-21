@@ -16,7 +16,7 @@ main:
     url: /mini-lectures/
 
   - title: "CV"
-    url: /files/CV_YAN_PengGao.pdf
+    url: /cv/
 
   - title: "Contact"
     url: /#contact

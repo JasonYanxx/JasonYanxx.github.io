@@ -260,6 +260,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # keep the web CV as the canonical public CV entry point
+  - scope:
+      path: ""
+    values:
+      sitemap: false
   # static talk map assets
   - scope:
       path: "talkmap"

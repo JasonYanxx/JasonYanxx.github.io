@@ -1,62 +1,100 @@
 
-# Academic Pages
+# Penggao Yan Academic Website
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+[![pages-build-deployment](https://github.com/JasonYanxx/JasonYanxx.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JasonYanxx/JasonYanxx.github.io/actions/workflows/pages/pages-build-deployment)
 
-Academic Pages is a Github Pages template for academic websites.
+This repository powers <https://jasonyanxx.github.io/>. It is based on the Academic Pages Jekyll template and is deployed with GitHub Pages.
 
+## Common Content Files
 
-# Getting Started
-
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
-
-See more info at https://academicpages.github.io/
+- Homepage/profile: `_pages/about.md`
+- Web CV: `_pages/cv.md`
+- Navigation: `_data/navigation.yml`
+- Site-wide metadata and SEO defaults: `_config.yml`
+- Static files such as PDFs: `files/`
 
 ## Running Locally
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub.
+Local preview is useful before pushing changes to GitHub Pages.
 
-### Prerequisites (macOS)
+### First-time setup
 
-1. Install Ruby 3.1: `brew install ruby@3.1`
-2. Run `bundle install` to install dependencies (from the project root)
-
-### How to Run the Site
-
-From the project root, run:
+From the project root, install the Ruby gems into the ignored `local/` folder:
 
 ```bash
+bundle config set path local/bundle
+bundle install
+```
+
+This keeps generated dependency files out of the repository. The repo also ignores `.bundle/`, `Gemfile.lock`, `_site/`, and `local/`.
+
+### Start the Jekyll server
+
+```bash
+bundle exec jekyll serve --host 127.0.0.1 --port 4000 --livereload
+```
+
+Open <http://127.0.0.1:4000/> in the browser.
+
+Press **Ctrl+C** in that terminal to stop the server.
+
+### Static preview fallback
+
+If the Jekyll development server has trouble staying up, build the site and serve the generated `_site/` folder:
+
+```bash
+bundle exec jekyll build
+python3 -m http.server 4000 --bind 127.0.0.1 --directory _site
+```
+
+Then open <http://127.0.0.1:4000/>.
+
+## Troubleshooting
+
+### `bundler: command not found: jekyll`
+
+Run the first-time setup again:
+
+```bash
+bundle config set path local/bundle
+bundle install
+```
+
+### `Faraday::Connection ... without adapter`
+
+This can happen when `jekyll-github-metadata` resolves to Faraday 2 locally. Keep this line in `Gemfile`:
+
+```ruby
+gem "faraday", "~> 1.10"
+```
+
+Then run:
+
+```bash
+bundle install
+bundle exec jekyll build
+```
+
+### RubyGems warning on macOS system Ruby
+
+macOS may print warnings about RubyGems being old when using the built-in Ruby. If `bundle exec jekyll build` succeeds, those warnings are not blocking local preview.
+
+### Optional newer Ruby on macOS
+
+If you prefer a Homebrew Ruby instead of the macOS system Ruby:
+
+```bash
+brew install ruby@3.1
 export PATH="/opt/homebrew/opt/ruby@3.1/bin:$PATH"
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-bundle exec jekyll serve
+bundle install
+bundle exec jekyll serve --host 127.0.0.1 --port 4000 --livereload
 ```
 
-The site will be available at **http://localhost:4000**.
+## Deployment
 
-To avoid typing the exports each time, add them to your `~/.zshrc`:
-```bash
-echo 'export PATH="/opt/homebrew/opt/ruby@3.1/bin:$PATH"' >> ~/.zshrc
-echo 'export LANG=en_US.UTF-8' >> ~/.zshrc
-echo 'export LC_ALL=en_US.UTF-8' >> ~/.zshrc
-```
-Then run `source ~/.zshrc` or open a new terminal.
+Push changes to the GitHub repository. GitHub Pages will build and deploy the site automatically through the Pages workflow.
 
-### How to Close the Site
-
-Press **Ctrl+C** in the terminal where Jekyll is running to stop the server.
-
----
-
-*Alternative setup for Linux:* Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`. You may also need: `sudo apt install build-essential gcc make`. Then run `bundle install` and `bundle exec jekyll serve`.
-
-# Maintenance 
+## Maintenance
 
 Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
 
