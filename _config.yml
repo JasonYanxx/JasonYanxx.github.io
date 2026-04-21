@@ -94,7 +94,7 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -189,6 +189,8 @@ exclude:
   - config
   - gulpfile.js
   - log
+  - local
+  - markdown_generator
   - node_modules
   - package.json
   - tmp
@@ -249,6 +251,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sitemap: false
+      robots: noindex, follow
   # _pages
   - scope:
       path: ""
@@ -256,6 +260,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # static talk map assets
+  - scope:
+      path: "talkmap"
+    values:
+      sitemap: false
   # _teaching
   - scope:
       path: ""
@@ -265,6 +274,8 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sitemap: false
+      robots: noindex, follow
   # _publications
   - scope:
       path: ""
@@ -291,6 +302,8 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      sitemap: false
+      robots: noindex, follow
 
 
 # Sass/SCSS

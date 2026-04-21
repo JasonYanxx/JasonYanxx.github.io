@@ -70,6 +70,9 @@
 {% if seo_keywords %}
   <meta name="keywords" content="{{ seo_keywords }}">
 {% endif %}
+{% if page.robots %}
+  <meta name="robots" content="{{ page.robots }}">
+{% endif %}
 
 <meta property="og:locale" content="{{ site.locale | default: "en" }}">
 <meta property="og:site_name" content="{{ site.title }}">

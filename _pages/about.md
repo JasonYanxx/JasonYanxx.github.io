@@ -76,7 +76,7 @@ redirect_from:
       <a href="/publication/2024-08-26-PGO">IEEE TAES</a>,
       <a href="/publication/2024-09-16-GNSS-2024">ION GNSS+</a>,
       <a href="/publication/2024-10-21-MFDI">IEEE Sensors</a>,
-      <a href="2024-10-18-FDE-GMM">IEEE TIV</a>,
+      <a href="/publication/2024-10-18-FDE-GMM">IEEE TIV</a>,
       <a href="/publication/2026-01-15-Jackknife-ARAIM">Aerospace Systems</a>.
     </p>
   </section>
