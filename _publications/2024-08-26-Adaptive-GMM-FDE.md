@@ -2,9 +2,16 @@
 title: "Subspace-based Adaptive GMM Error Modeling for Fault-Aware Vehicular GNSS Positioning in Urban Canyons"
 collection: publications
 category: manuscripts
+featured: true
+featured_rank: 4
+featured_label: "Urban positioning"
+featured_image: /assets/images/AdpGMM-cover.jpg
+featured_image_alt: "Adaptive Gaussian mixture error modeling for urban GNSS positioning"
+featured_summary: "A subspace-based adaptive GMM that couples real-time error modeling with fault detection for vehicular positioning in urban canyons."
 permalink: /publication/2024-08-26-Adaptive-GMM-FDE
 excerpt: "Simultaneous adaptive error modeling and fault detection and exclusion <br/><img src='/assets/images/AdpGMM-cover.jpg' alt='Cover image for the adaptive GMM FDE paper' width='800'>"
 date: 2024-08-26
+publication_year: "2024"
 venue: 'IEEE Transactions on Intelligent Vehicles'
 doi: '10.1109/TIV.2024.3450198'
 paperurl: '/files/Subspace-basedAdaptiveGMMErrorModelingforFault-AwarePseudorange-basedPositioninginUrbanCanyons.pdf'

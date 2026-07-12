@@ -1,0 +1,87 @@
+- year: "2025"
+  title: "PolyU Postdoctoral Matching Fund Scheme"
+  issuer: "The Hong Kong Polytechnic University, Hong Kong"
+  category: "Research support"
+
+- year: "2025"
+  title: "Research Talent Hub (RTH) Scheme"
+  issuer: "Innovation and Technology Commission, Hong Kong"
+  category: "Research support"
+
+- year: "2024"
+  title: "ION GNSS+ Student Paper Award"
+  issuer: "The Institute of Navigation, USA"
+  category: "Research recognition"
+  detail: "Awarded for “Jackknife Test for Faulty GNSS Measurements Detection under Non-Gaussian Noises.”"
+  link: "/portfolio/2024-09-20-portfolio"
+  featured: true
+  featured_rank: 1
+  image: "/assets/images/ion_student_paper_award_2024.jpg"
+  image_alt: "ION GNSS+ 2024 Student Paper Award certificate awarded to Penggao Yan"
+
+- year: "2024"
+  title: "HKSAR Government Scholarship Fund — Reaching Out Award"
+  issuer: "Education Bureau, Hong Kong"
+  category: "Scholarship"
+  detail: "Supported participation and presentation at the ION 2024 Pacific PNT Meeting in Honolulu, Hawaii."
+
+- year: "2023"
+  title: "ION Student Registration Grant"
+  issuer: "The Institute of Navigation, USA"
+  category: "Research support"
+
+- year: "2021"
+  title: "PolyU Presidential PhD Fellowship"
+  issuer: "The Hong Kong Polytechnic University, Hong Kong"
+  category: "Fellowship"
+  featured: true
+  featured_rank: 2
+  featured_note: "Doctoral fellowship"
+
+- year: "2019"
+  title: "Outstanding Graduate Student"
+  issuer: "Wuhan University, China"
+  category: "Academic distinction"
+
+- year: "2018"
+  title: "Excellent Bachelor’s Thesis"
+  issuer: "Wuhan University, China"
+  category: "Academic distinction"
+
+- year: "2018"
+  title: "Outstanding Student Scholarship"
+  issuer: "Wuhan University, China"
+  category: "Scholarship"
+
+- year: "2018"
+  title: "Merit Student Award"
+  issuer: "Wuhan University, China"
+  category: "Academic distinction"
+
+- year: "2017"
+  title: "National Encouragement Scholarship"
+  issuer: "Ministry of Education of the People’s Republic of China"
+  category: "Scholarship"
+
+- year: "2017"
+  title: "First Prize, National Undergraduate Electronics Design Contest"
+  issuer: "Ministry of Education of the People’s Republic of China"
+  category: "Competition"
+  featured: true
+  featured_rank: 3
+  featured_note: "National competition"
+
+- year: "2017"
+  title: "Second Prize, National Undergraduate Intelligent Car Race"
+  issuer: "Ministry of Education of the People’s Republic of China"
+  category: "Competition"
+
+- year: "2016"
+  title: "First Prize, Hubei Province Undergraduate Electronics Design Contest"
+  issuer: "Ministry of Education of the People’s Republic of China"
+  category: "Competition"
+
+- year: "2016"
+  title: "First Place, South China Division of the National Undergraduate Intelligent Car Race"
+  issuer: "Ministry of Education of the People’s Republic of China"
+  category: "Competition"

@@ -396,3 +396,621 @@ h3[id],
     text-align: center;
   }
 }
+
+/* Curated academic records: publications, talks, awards, and peer review. */
+.section-intro {
+  margin: 0 0 2.4rem;
+  padding: 1.35rem 1.45rem;
+  border-left: 4px solid var(--site-accent);
+  border-radius: 0 18px 18px 0;
+  background: linear-gradient(135deg, rgba(234, 243, 251, 0.86), rgba(255, 255, 255, 0.96));
+  box-shadow: 0 14px 36px rgba(9, 26, 47, 0.08);
+}
+
+.section-intro__eyebrow,
+.award-card__eyebrow,
+.award-item__category,
+.talk-card__eyebrow,
+.talk-list-item__type,
+.service-note__eyebrow {
+  margin: 0 0 0.45rem;
+  color: var(--site-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-intro__lede {
+  margin: 0;
+  color: var(--site-ink);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.section-intro__meta {
+  margin: 0.8rem 0 0;
+  color: var(--site-muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.publication-grid,
+.talk-feature-grid,
+.award-feature-grid,
+.peer-review-grid {
+  display: grid;
+  gap: 1.15rem;
+  margin: 1.35rem 0 2.75rem;
+}
+
+.publication-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.talk-feature-grid,
+.award-feature-grid,
+.peer-review-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.publication-card,
+.talk-card,
+.award-card,
+.peer-review-card,
+.service-note,
+.service-stat {
+  overflow: hidden;
+  border: 1px solid var(--site-border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: var(--site-shadow);
+}
+
+.publication-card,
+.talk-card,
+.award-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.publication-card__media,
+.talk-card__media,
+.award-card__media {
+  display: block;
+  overflow: hidden;
+  background: var(--site-sky);
+}
+
+.publication-card__media {
+  aspect-ratio: 16 / 10;
+}
+
+.talk-card__media,
+.award-card__media {
+  aspect-ratio: 16 / 9;
+}
+
+.publication-card__media img,
+.talk-card__media img,
+.award-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+
+.award-card__media img {
+  background: #f6f2e9;
+  object-fit: contain;
+}
+
+.publication-card__body,
+.talk-card__body,
+.award-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.2rem 1.25rem 1.25rem;
+}
+
+.publication-card__topline,
+.publication-list-item__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.publication-card__number,
+.peer-review-card__index {
+  color: rgba(15, 39, 68, 0.35);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.publication-card__badge,
+.publication-list-item__featured {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(217, 122, 37, 0.12);
+  color: #a55313;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.publication-card__badge {
+  padding: 0.42rem 0.58rem;
+}
+
+.publication-list-item__featured {
+  padding: 0.36rem 0.5rem;
+}
+
+.publication-card h3,
+.talk-card h3,
+.award-card h3 {
+  margin: 0.75rem 0 0.55rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.publication-card h3 a,
+.talk-card h3 a,
+.award-card h3 a {
+  text-decoration: none;
+}
+
+.publication-card__meta,
+.publication-card__summary,
+.talk-card__venue,
+.award-card__detail {
+  color: var(--site-muted);
+}
+
+.publication-card__meta,
+.talk-card__venue {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.publication-card__summary,
+.talk-card__body > p:last-of-type,
+.award-card__body > p {
+  line-height: 1.7;
+}
+
+.record-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+  padding-top: 0.85rem;
+}
+
+.record-links a,
+.year-nav a {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(15, 39, 68, 0.14);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--site-navy);
+  font-size: 0.76rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.record-links a {
+  padding: 0.48rem 0.66rem;
+}
+
+.record-links a:hover,
+.record-links a:focus,
+.year-nav a:hover,
+.year-nav a:focus {
+  border-color: rgba(217, 122, 37, 0.55);
+  color: var(--site-accent);
+}
+
+.year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.2rem 0 1.8rem;
+}
+
+.year-nav a {
+  padding: 0.6rem 0.78rem;
+}
+
+.publication-year,
+.talk-year,
+.award-year {
+  scroll-margin-top: 6rem;
+}
+
+.publication-year > h3,
+.talk-year > h3,
+.award-year > h3 {
+  margin: 2rem 0 0.8rem;
+  color: var(--site-navy);
+  font-size: 1.55rem;
+}
+
+.publication-list,
+.talk-list,
+.award-year__items {
+  border-top: 1px solid var(--site-border);
+}
+
+.publication-list-item,
+.talk-list-item,
+.award-item {
+  position: relative;
+  border-bottom: 1px solid var(--site-border);
+}
+
+.publication-list-item {
+  display: grid;
+  grid-template-columns: 7px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.15rem 0;
+}
+
+.publication-list-item__marker {
+  width: 7px;
+  height: 100%;
+  min-height: 4rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--site-accent), var(--site-accent-soft));
+}
+
+.publication-list-item__topline {
+  justify-content: flex-start;
+  color: var(--site-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.publication-list-item h4,
+.talk-list-item h4,
+.award-item h4 {
+  margin: 0.35rem 0 0.4rem;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.publication-list-item h4 a,
+.talk-list-item h4 a,
+.award-item h4 a {
+  text-decoration: none;
+}
+
+.publication-list-item__meta,
+.talk-list-item__venue,
+.award-item__issuer,
+.award-item__detail {
+  margin: 0;
+  color: var(--site-muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.talk-card__placeholder {
+  display: grid;
+  min-height: 11rem;
+  place-items: center;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(244, 163, 93, 0.85), transparent 24%),
+    linear-gradient(135deg, var(--site-navy-deep), var(--site-ink));
+  color: #fff !important;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.service-note {
+  margin: 1.2rem 0 2.5rem;
+  padding: 1.2rem 1.35rem;
+  background: linear-gradient(135deg, rgba(15, 39, 68, 0.98), rgba(22, 49, 79, 0.95));
+  color: #fff;
+}
+
+.service-note--compact {
+  margin-top: -1rem;
+}
+
+.service-note p:last-child {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.service-note__eyebrow {
+  color: var(--site-accent-soft);
+}
+
+.talk-list-item {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 1.15rem;
+  padding: 1.2rem 0;
+}
+
+.talk-list-item__date {
+  color: var(--site-muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.talk-list-item__body > p:not([class]) {
+  margin: 0.55rem 0 0;
+  line-height: 1.65;
+}
+
+.gallery-intro {
+  max-width: 48rem;
+  color: var(--site-muted);
+  line-height: 1.75;
+}
+
+.activity-gallery {
+  display: grid;
+  grid-auto-rows: 13rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 1.35rem 0 2.5rem;
+}
+
+.activity-gallery__item {
+  position: relative;
+  grid-column: span 6;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 18px;
+  background: var(--site-navy-deep);
+  box-shadow: 0 14px 36px rgba(9, 26, 47, 0.14);
+}
+
+.activity-gallery__item--wide {
+  grid-column: span 12;
+}
+
+.activity-gallery__item--tall {
+  grid-row: span 2;
+}
+
+.activity-gallery__item a,
+.activity-gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.activity-gallery__item img {
+  margin: 0;
+  object-fit: cover;
+}
+
+.activity-gallery__item--tall img {
+  object-position: center;
+}
+
+.activity-gallery__item figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 2.4rem 1rem 0.9rem;
+  background: linear-gradient(transparent, rgba(9, 26, 47, 0.9));
+  color: #fff;
+  font-size: 0.78rem;
+}
+
+.activity-gallery__item figcaption span {
+  color: rgba(255, 255, 255, 0.78);
+  text-align: right;
+}
+
+.talk-page-meta {
+  color: var(--site-muted);
+  line-height: 1.6;
+}
+
+.talk-hero {
+  overflow: hidden;
+  margin: 0 0 1.25rem;
+  border-radius: 20px;
+  box-shadow: var(--site-shadow);
+}
+
+.talk-hero img {
+  display: block;
+  width: 100%;
+  max-height: 34rem;
+  margin: 0;
+  object-fit: cover;
+}
+
+.talk-hero figcaption {
+  padding: 0.65rem 0.9rem;
+  background: var(--site-sky);
+  color: var(--site-muted);
+  font-size: 0.78rem;
+}
+
+.talk-lede {
+  padding-left: 1rem;
+  border-left: 4px solid var(--site-accent);
+  color: var(--site-ink);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.award-card__monogram {
+  display: grid;
+  min-height: 10rem;
+  place-items: center;
+  background:
+    radial-gradient(circle at 70% 20%, rgba(244, 163, 93, 0.75), transparent 25%),
+    linear-gradient(135deg, var(--site-navy-deep), var(--site-ink));
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.award-card__body > p {
+  margin: 0 0 0.65rem;
+}
+
+.award-card__link {
+  margin-top: auto;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.award-year {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.award-year > h3 {
+  margin-top: 1.2rem;
+}
+
+.award-item {
+  padding: 1.1rem 0;
+}
+
+.award-item__detail {
+  margin-top: 0.45rem;
+}
+
+.service-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: -1rem 0 2.5rem;
+}
+
+.service-stat {
+  padding: 1.05rem;
+  text-align: center;
+}
+
+.service-stat strong,
+.service-stat span {
+  display: block;
+}
+
+.service-stat strong {
+  color: var(--site-navy);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.service-stat span {
+  margin-top: 0.45rem;
+  color: var(--site-muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.peer-review-card {
+  padding: 1.25rem;
+}
+
+.peer-review-card h3 {
+  margin: 0.55rem 0 1rem;
+  font-size: 1.05rem;
+}
+
+.peer-review-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.peer-review-list li {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--site-border);
+}
+
+.peer-review-list a,
+.peer-review-list span {
+  display: block;
+}
+
+.peer-review-list a {
+  text-decoration: none;
+}
+
+.peer-review-list__short {
+  font-weight: 800;
+}
+
+.peer-review-list__name,
+.peer-review-list__publisher {
+  margin-top: 0.2rem;
+  color: var(--site-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .publication-grid,
+  .service-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .talk-list-item,
+  .award-year {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .award-year > h3 {
+    margin-bottom: 0;
+  }
+
+  .activity-gallery {
+    grid-auto-rows: 15rem;
+    grid-template-columns: 1fr;
+  }
+
+  .activity-gallery__item,
+  .activity-gallery__item--wide,
+  .activity-gallery__item--tall {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .activity-gallery__item figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .activity-gallery__item figcaption span {
+    text-align: left;
+  }
+}

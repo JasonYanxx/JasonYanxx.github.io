@@ -1,0 +1,65 @@
+---
+layout: archive
+title: "Peer Review"
+permalink: /peer-review/
+author_profile: true
+description: "Academic peer-review service by Penggao Yan across navigation, aerospace, instrumentation, and connected systems journals."
+sitemap: true
+robots: index, follow
+---
+
+{% include base_path %}
+{% assign review_areas = site.data.peer_review | group_by: "area" %}
+
+<div class="section-intro">
+  <p class="section-intro__eyebrow">Academic service</p>
+  <p class="section-intro__lede">
+    I contribute peer review across navigation, aerospace, instrumentation, industrial electronics, and connected systems.
+    This record lists venues while respecting the confidentiality of individual manuscripts and reports.
+  </p>
+</div>
+
+<div class="service-stats" aria-label="Peer-review overview">
+  <div class="service-stat">
+    <strong>{{ site.data.peer_review | size }}</strong>
+    <span>journals</span>
+  </div>
+  <div class="service-stat">
+    <strong>4</strong>
+    <span>IEEE venues</span>
+  </div>
+  <div class="service-stat">
+    <strong>{{ review_areas | size }}</strong>
+    <span>research areas</span>
+  </div>
+</div>
+
+<h2 id="review-venues">Review Venues</h2>
+
+<div class="peer-review-grid">
+  {% for area in review_areas %}
+    <section class="peer-review-card" aria-labelledby="review-area-{{ forloop.index }}">
+      <p class="peer-review-card__index">0{{ forloop.index }}</p>
+      <h3 id="review-area-{{ forloop.index }}">{{ area.name }}</h3>
+      <ul class="peer-review-list">
+        {% for journal in area.items %}
+          <li>
+            <a href="{{ journal.url }}" target="_blank" rel="noopener">
+              <span class="peer-review-list__short">{{ journal.short_name }}</span>
+              <span class="peer-review-list__name">{{ journal.name }}</span>
+            </a>
+            <span class="peer-review-list__publisher">{{ journal.publisher }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>
+
+<div class="service-note">
+  <p class="service-note__eyebrow">Review scope</p>
+  <p>
+    Typical topics include integrity monitoring, GNSS and multisensor positioning, non-Gaussian estimation,
+    uncertainty quantification, and reliable autonomy.
+  </p>
+</div>

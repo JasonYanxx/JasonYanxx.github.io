@@ -5,6 +5,7 @@ category: manuscripts
 permalink: /publication/2026-03-17-LQLC-Urban-GNSS
 excerpt: "Logistic pseudorange errors and the Least Quasi-Log-Cosh (LQLC) M-estimator with IRLS for urban GNSS, validated in light, medium, and deep urban Hong Kong data <br/><img src='/assets/images/LQLC-urban-GNSS-cover.png' alt='Cover image for the LQLC urban GNSS paper' width='800'>"
 date: 2026-03-17
+publication_year: "2026"
 venue: 'ArXiv'
 paperurl: 'https://arxiv.org/abs/2603.16420'
 citation: 'Li, Z., Yan, P., Song, B., & Hsu, L. T. (2026). &quot;Improved GNSS Positioning in Urban Environments Using a Logistic Error Model&quot;. <i>arXiv preprint arXiv:2603.16420</i>. '

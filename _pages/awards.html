@@ -1,0 +1,71 @@
+---
+layout: archive
+title: "Awards and Honors"
+permalink: /awards/
+author_profile: true
+description: "Awards, fellowships, scholarships, and research recognition received by Penggao Yan."
+sitemap: true
+robots: index, follow
+---
+
+{% include base_path %}
+{% assign featured_awards = site.data.awards | where: "featured", true | sort: "featured_rank" %}
+{% assign award_years = site.data.awards | group_by: "year" %}
+
+<div class="section-intro">
+  <p class="section-intro__eyebrow">Recognition</p>
+  <p class="section-intro__lede">
+    Research awards, competitive fellowships, academic distinctions, and student competition honors across navigation,
+    engineering, and doctoral training.
+  </p>
+  <p class="section-intro__meta">{{ site.data.awards | size }} awards and honors currently documented</p>
+</div>
+
+<h2 id="featured-recognition">Featured Recognition</h2>
+
+<div class="award-feature-grid">
+  {% for award in featured_awards %}
+    <article class="award-card{% if award.image %} award-card--with-image{% endif %}">
+      {% if award.image %}
+        <a class="award-card__media" href="{{ award.link | prepend: base_path }}">
+          <img src="{{ award.image | prepend: base_path }}" alt="{{ award.image_alt | escape_once }}" loading="lazy">
+        </a>
+      {% else %}
+        <div class="award-card__monogram" aria-hidden="true">{{ award.year | slice: 2, 2 }}</div>
+      {% endif %}
+      <div class="award-card__body">
+        <p class="award-card__eyebrow">{{ award.featured_note | default: award.category }} · {{ award.year }}</p>
+        <h3>{{ award.title }}</h3>
+        <p>{{ award.issuer }}</p>
+        {% if award.detail %}<p class="award-card__detail">{{ award.detail }}</p>{% endif %}
+        {% if award.link %}<a class="award-card__link" href="{{ award.link | prepend: base_path }}">View award story</a>{% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+<h2 id="full-award-list">Full List</h2>
+
+<nav class="year-nav" aria-label="Award years">
+  {% for year in award_years %}<a href="#awards-{{ year.name }}">{{ year.name }}</a>{% endfor %}
+</nav>
+
+<div class="award-timeline">
+  {% for year in award_years %}
+    <section class="award-year" id="awards-{{ year.name }}" aria-labelledby="awards-heading-{{ year.name }}">
+      <h3 id="awards-heading-{{ year.name }}">{{ year.name }}</h3>
+      <div class="award-year__items">
+        {% for award in year.items %}
+          <article class="award-item">
+            <p class="award-item__category">{{ award.category }}</p>
+            <h4>
+              {% if award.link %}<a href="{{ award.link | prepend: base_path }}">{{ award.title }}</a>{% else %}{{ award.title }}{% endif %}
+            </h4>
+            <p class="award-item__issuer">{{ award.issuer }}</p>
+            {% if award.detail %}<p class="award-item__detail">{{ award.detail }}</p>{% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

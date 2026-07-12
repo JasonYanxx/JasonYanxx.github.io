@@ -3,34 +3,103 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
-description: "Journal articles and conference papers by Penggao Yan on GNSS integrity, robust localization, and uncertainty quantification."
+description: "Selected and complete publication list by Penggao Yan on GNSS integrity, robust localization, and uncertainty quantification."
+sitemap: true
+robots: index, follow
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
+{% assign all_publications = site.publications | sort: "date" | reverse %}
+{% assign featured_publications = site.publications | where: "featured", true | sort: "featured_rank" %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<div class="section-intro">
+  <p class="section-intro__eyebrow">Research record</p>
+  <p class="section-intro__lede">
+    A curated set of five representative papers is followed by the complete publication record, organized by year.
+    The selection emphasizes credible uncertainty, non-Gaussian integrity monitoring, and robust localization.
+  </p>
+  <p class="section-intro__meta">
+    {{ all_publications | size }} works currently listed
+    {% if site.author.googlescholar %}
+      · <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+    {% endif %}
+  </p>
+</div>
+
+<h2 id="top-five">Top Five Publications</h2>
+
+<div class="publication-grid">
+  {% for post in featured_publications %}
+    <article class="publication-card">
+      <a class="publication-card__media" href="{{ base_path }}{{ post.url }}" aria-label="Read {{ post.title | escape_once }}">
+        <img
+          src="{{ post.featured_image | prepend: base_path }}"
+          alt="{{ post.featured_image_alt | default: post.title | escape_once }}"
+          loading="lazy">
+      </a>
+      <div class="publication-card__body">
+        <div class="publication-card__topline">
+          <span class="publication-card__number">0{{ forloop.index }}</span>
+          {% if post.featured_label %}<span class="publication-card__badge">{{ post.featured_label }}</span>{% endif %}
+        </div>
+        <h3><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="publication-card__meta"><em>{{ post.venue }}</em> · {{ post.publication_year }}</p>
+        <p class="publication-card__summary">{{ post.featured_summary }}</p>
+        <div class="record-links" aria-label="Links for {{ post.title | escape_once }}">
+          <a href="{{ base_path }}{{ post.url }}">Details</a>
+          {% if post.doi %}<a href="https://doi.org/{{ post.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+          {% if post.publisherurl %}<a href="{{ post.publisherurl }}" target="_blank" rel="noopener">{{ post.publisherlabel | default: "Published version" }}</a>{% endif %}
+          {% if post.paperurl %}
+            {% assign featured_paper_href = post.paperurl %}
+            {% unless featured_paper_href contains '://' %}{% assign featured_paper_href = post.paperurl | prepend: base_path %}{% endunless %}
+            <a href="{{ featured_paper_href }}" target="_blank" rel="noopener">{{ post.paperlabel | default: "Paper" }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </article>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+</div>
+
+<h2 id="full-list">Full List of Publications</h2>
+
+{% assign publication_years = all_publications | group_by: "publication_year" %}
+
+<nav class="year-nav" aria-label="Publication years">
+  {% for year in publication_years %}
+    <a href="#publications-{{ year.name }}">{{ year.name }}</a>
   {% endfor %}
-{% endif %}
+</nav>
 
-
+<div class="publication-archive">
+  {% for year in publication_years %}
+    <section class="publication-year" id="publications-{{ year.name }}" aria-labelledby="publications-heading-{{ year.name }}">
+      <h3 id="publications-heading-{{ year.name }}">{{ year.name }}</h3>
+      <div class="publication-list">
+        {% for post in year.items %}
+          <article class="publication-list-item">
+            <div class="publication-list-item__marker" aria-hidden="true"></div>
+            <div class="publication-list-item__body">
+              <div class="publication-list-item__topline">
+                <span>{{ post.category | replace: "manuscripts", "Journal article" | replace: "conferences", "Conference paper" }}</span>
+                {% if post.featured %}<span class="publication-list-item__featured">Top Five</span>{% endif %}
+              </div>
+              <h4><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></h4>
+              <p class="publication-list-item__meta"><em>{{ post.venue }}</em> · {{ post.publication_year }}</p>
+              <div class="record-links" aria-label="Links for {{ post.title | escape_once }}">
+                <a href="{{ base_path }}{{ post.url }}">Details</a>
+                {% if post.doi %}<a href="https://doi.org/{{ post.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+                {% if post.publisherurl %}<a href="{{ post.publisherurl }}" target="_blank" rel="noopener">{{ post.publisherlabel | default: "Published version" }}</a>{% endif %}
+                {% if post.paperurl %}
+                  {% assign paper_href = post.paperurl %}
+                  {% unless paper_href contains '://' %}{% assign paper_href = post.paperurl | prepend: base_path %}{% endunless %}
+                  <a href="{{ paper_href }}" target="_blank" rel="noopener">{{ post.paperlabel | default: "Paper" }}</a>
+                {% endif %}
+                {% if post.slidesurl and post.slidesurl contains 'http' %}<a href="{{ post.slidesurl }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

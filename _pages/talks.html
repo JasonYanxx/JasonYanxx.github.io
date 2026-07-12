@@ -1,19 +1,134 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks and Presentations"
 permalink: /talks/
 author_profile: true
-description: "Talks and presentations by Penggao Yan on trusted autonomy, navigation integrity, and positioning systems."
-sitemap: false
-robots: noindex, follow
+description: "Conference presentations, invited talks, and speaking highlights by Penggao Yan on trusted autonomy, navigation integrity, and positioning systems."
+sitemap: true
+robots: index, follow
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
+{% assign all_talks = site.talks | sort: "date" | reverse %}
+{% assign featured_talks = site.talks | where: "featured", true | sort: "featured_rank" %}
+{% assign talk_years = all_talks | group_by_exp: "talk", "talk.date | date: '%Y'" %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<div class="section-intro">
+  <p class="section-intro__eyebrow">Speaking</p>
+  <p class="section-intro__lede">
+    Conference presentations and invited talks on credible uncertainty, fault detection, integrity monitoring,
+    and robust localization—paired with the people and places that make scientific exchange memorable.
+  </p>
+  <p class="section-intro__meta">{{ all_talks | size }} talks currently documented · 2 session-chair roles</p>
+</div>
 
-{% endif %}
+<h2 id="speaking-highlights">Speaking Highlights</h2>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<div class="talk-feature-grid">
+  {% for talk in featured_talks %}
+    <article class="talk-card">
+      {% if talk.image %}
+        <a class="talk-card__media" href="{{ base_path }}{{ talk.url }}">
+          <img src="{{ talk.image | prepend: base_path }}" alt="{{ talk.image_alt | escape_once }}" loading="lazy">
+        </a>
+      {% else %}
+        <a class="talk-card__placeholder" href="{{ base_path }}{{ talk.url }}" aria-label="Read {{ talk.title | escape_once }}">
+          <span>{% if talk.venue_short %}{{ talk.venue_short }}{% else %}{{ talk.date | date: "%Y" }}{% endif %}</span>
+        </a>
+      {% endif %}
+      <div class="talk-card__body">
+        <p class="talk-card__eyebrow">{{ talk.talk_type }} · {% if talk.display_date %}{{ talk.display_date }}{% else %}{{ talk.date | date: "%B %Y" }}{% endif %}</p>
+        <h3><a href="{{ base_path }}{{ talk.url }}">{{ talk.title }}</a></h3>
+        <p class="talk-card__venue">{{ talk.venue }}{% if talk.location %} · {{ talk.location }}{% endif %}</p>
+        <p>{{ talk.summary }}</p>
+        <div class="record-links">
+          <a href="{{ base_path }}{{ talk.url }}">Details</a>
+          {% if talk.event_url %}<a href="{{ talk.event_url }}" target="_blank" rel="noopener">Event</a>{% endif %}
+          {% if talk.paper_url %}<a href="{{ talk.paper_url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+          {% if talk.slides_url %}<a href="{{ talk.slides_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+          {% if talk.video_url %}<a href="{{ talk.video_url }}" target="_blank" rel="noopener">Video</a>{% endif %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+<div class="service-note service-note--compact">
+  <p class="service-note__eyebrow">Conference service</p>
+  <p>
+    Session Chair for “Innovations in Navigation for Smartphones and Wearables” at ION ITM 2026 and
+    “AI-Driven Positioning and Navigation” at ION GNSS+ 2025.
+  </p>
+</div>
+
+<h2 id="all-talks">All Talks</h2>
+
+<nav class="year-nav" aria-label="Talk years">
+  {% for year in talk_years %}<a href="#talks-{{ year.name }}">{{ year.name }}</a>{% endfor %}
+</nav>
+
+<div class="talk-archive">
+  {% for year in talk_years %}
+    <section class="talk-year" id="talks-{{ year.name }}" aria-labelledby="talk-heading-{{ year.name }}">
+      <h3 id="talk-heading-{{ year.name }}">{{ year.name }}</h3>
+      <div class="talk-list">
+        {% for talk in year.items %}
+          <article class="talk-list-item">
+            <div class="talk-list-item__date">{% if talk.display_date %}{{ talk.display_date }}{% else %}{{ talk.date | date: "%b %Y" }}{% endif %}</div>
+            <div class="talk-list-item__body">
+              <p class="talk-list-item__type">{{ talk.talk_type }}</p>
+              <h4><a href="{{ base_path }}{{ talk.url }}">{{ talk.title }}</a></h4>
+              <p class="talk-list-item__venue">{{ talk.venue }}{% if talk.location %} · {{ talk.location }}{% endif %}</p>
+              <p>{{ talk.summary }}</p>
+              <div class="record-links">
+                <a href="{{ base_path }}{{ talk.url }}">Details</a>
+                {% if talk.event_url %}<a href="{{ talk.event_url }}" target="_blank" rel="noopener">Event</a>{% endif %}
+                {% if talk.paper_url %}<a href="{{ talk.paper_url }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+                {% if talk.slides_url %}<a href="{{ talk.slides_url }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+                {% if talk.video_url %}<a href="{{ talk.video_url }}" target="_blank" rel="noopener">Video</a>{% endif %}
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>
+
+<h2 id="conference-moments">Conference Moments</h2>
+
+<p class="gallery-intro">
+  Presenting the work is only one part of a conference. These moments capture the conversations, collaborations,
+  and places around the talks.
+</p>
+
+<div class="activity-gallery">
+  <figure class="activity-gallery__item activity-gallery__item--wide">
+    <a href="{{ base_path }}/portfolio/2024-09-20-portfolio"><img src="{{ base_path }}/assets/images/ion2024_gresentation.jpg" alt="Penggao Yan presenting the jackknife detector at ION GNSS+ 2024" loading="lazy"></a>
+    <figcaption><strong>On stage</strong><span>ION GNSS+ 2024 · Baltimore</span></figcaption>
+  </figure>
+  <figure class="activity-gallery__item">
+    <a href="{{ base_path }}/portfolio/2024-09-20-portfolio"><img src="{{ base_path }}/assets/images/ion_group_photo.jpg" alt="Penggao Yan and colleagues at ION GNSS+ 2024" loading="lazy"></a>
+    <figcaption><strong>Shared milestones</strong><span>ION GNSS+ 2024</span></figcaption>
+  </figure>
+  <figure class="activity-gallery__item activity-gallery__item--tall">
+    <a href="{{ base_path }}/portfolio/2024-04-16-portfolio"><img src="{{ base_path }}/assets/images/pnt2024_gresentation.jpg" alt="Penggao Yan presenting at Pacific PNT 2024" loading="lazy"></a>
+    <figcaption><strong>Heavy-tailed error bounding</strong><span>Pacific PNT 2024 · Honolulu</span></figcaption>
+  </figure>
+  <figure class="activity-gallery__item">
+    <a href="{{ base_path }}/portfolio/2024-01-22-portfolio"><img src="{{ base_path }}/assets/images/ITM2024_gresentation.jpg" alt="Penggao Yan presenting a LiDAR IMU fault detection method at ION ITM 2024" loading="lazy"></a>
+    <figcaption><strong>Fault detection in focus</strong><span>ION ITM 2024 · Long Beach</span></figcaption>
+  </figure>
+  <figure class="activity-gallery__item activity-gallery__item--wide">
+    <a href="{{ base_path }}/portfolio/2024-04-16-portfolio"><img src="{{ base_path }}/assets/images/PNT2024_group_photo.jpg" alt="Conference colleagues gathering in Honolulu during Pacific PNT 2024" loading="lazy"></a>
+    <figcaption><strong>Community beyond the sessions</strong><span>Pacific PNT 2024 · Honolulu</span></figcaption>
+  </figure>
+  <figure class="activity-gallery__item">
+    <a href="{{ base_path }}/portfolio/2023-04-24-portfolio"><img src="{{ base_path }}/assets/images/PLANS2023_gresentation.jpg" alt="Penggao Yan presenting at IEEE ION PLANS 2023" loading="lazy"></a>
+    <figcaption><strong>Early conference work</strong><span>IEEE/ION PLANS 2023 · Monterey</span></figcaption>
+  </figure>
+  <figure class="activity-gallery__item activity-gallery__item--tall">
+    <a href="{{ base_path }}/portfolio/2025-06-22-portfolio"><img src="{{ base_path }}/assets/images/Napoca-statue.png" alt="Matthias Corvinus Monument in Cluj-Napoca during IEEE IV 2025" loading="lazy"></a>
+    <figcaption><strong>Between sessions</strong><span>IEEE IV 2025 · Cluj-Napoca</span></figcaption>
+  </figure>
+</div>
