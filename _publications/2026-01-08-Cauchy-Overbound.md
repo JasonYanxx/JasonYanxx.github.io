@@ -5,6 +5,7 @@ category: manuscripts
 permalink: /publication/2026-01-08-Cauchy-Overbound
 excerpt: "Leveraging the bounding sharpness of the Cauchy distribution in the core and the Gaussian distribution in the tails to tightly bound heavy-tailed GNSS measurement errors <br/><img src='/assets/images/Cauchy-Overbound-cover.jpg' alt='Cover image for the Cauchy Gaussian overbounding paper' width='800'>"
 date: 2026-01-08
+publication_year: "2026"
 venue: 'NAVIGATION: Journal of the Institute of Navigation'
 paperurl: 'https://navi.ion.org/content/73/1/navi.749'
 doi: '10.33012/navi.749'

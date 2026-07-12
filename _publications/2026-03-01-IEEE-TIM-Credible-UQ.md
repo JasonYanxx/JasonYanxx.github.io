@@ -2,9 +2,16 @@
 title: "Credible Uncertainty Quantification under Noise and System Model Mismatch"
 collection: publications
 category: manuscripts
+featured: true
+featured_rank: 1
+featured_label: "Credible uncertainty"
+featured_image: /assets/images/TIM-Credible-UQ-cover.png
+featured_image_alt: "Framework for diagnosing credible uncertainty under noise and system model mismatch"
+featured_summary: "A unified, multi-metric framework that turns uncertainty-calibration failures into diagnoses of noise mismatch, covariance scaling, or system bias."
 permalink: /publication/2026-03-01-IEEE-TIM-Credible-UQ
 excerpt: "Unified NCI, NLL, and ES framework with empirical location test (ELT) and directional probing to diagnose noise vs. system model mismatch <br/><img src='/assets/images/TIM-Credible-UQ-cover.png' alt='Cover image for the credible uncertainty quantification paper' width='800'>"
 date: 2026-03-01
+publication_year: "2026"
 venue: 'IEEE Transactions on Instrumentation and Measurement'
 doi: '10.1109/TIM.2026.3682809'
 publisherurl: 'https://ieeexplore.ieee.org/document/11479287'

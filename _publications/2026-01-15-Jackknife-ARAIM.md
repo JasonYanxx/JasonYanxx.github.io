@@ -2,9 +2,16 @@
 title: "Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors"
 collection: publications
 category: manuscripts
+featured: true
+featured_rank: 2
+featured_label: "Integrity monitoring"
+featured_image: /assets/images/Jackknife-ARAIM-cover.jpg
+featured_image_alt: "Overview of the Jackknife ARAIM integrity monitoring method"
+featured_summary: "An efficient ARAIM framework for simultaneous faults under non-Gaussian errors, designed to tighten protection levels without sacrificing integrity."
 permalink: /publication/2026-01-15-Jackknife-ARAIM
 excerpt: "Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors <br/><img src='/assets/images/Jackknife-ARAIM-cover.jpg' alt='Cover image for the Jackknife ARAIM paper' width='800'>"
 date: 2026-01-15
+publication_year: "2026"
 venue: 'Aerospace Systems'
 paperurl: 'https://arxiv.org/abs/2507.04284'
 citation: 'Yan, P., Jin, R., Zhang, J., Wang, C., & Hsu, L. T. (2026). &quot;Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors&quot;. <i>Aerospace Systems</i>.'
