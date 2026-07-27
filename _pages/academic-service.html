@@ -1,0 +1,140 @@
+---
+layout: archive
+title: "Academic Service"
+permalink: /academic-service/
+author_profile: true
+description: "Conference leadership, session chairing, professional committees, and peer-review service by Penggao Yan."
+redirect_from:
+  - /peer-review/
+  - /peer-review
+sitemap: true
+robots: index, follow
+---
+
+{% include base_path %}
+{% assign all_service = site.service | sort: "date" | reverse %}
+{% assign featured_service = site.service | where: "featured", true | sort: "featured_rank" %}
+{% assign service_years = all_service | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% assign service_areas = all_service | group_by: "service_area" %}
+{% assign review_areas = site.data.peer_review | group_by: "area" %}
+
+<div class="section-intro">
+  <p class="section-intro__eyebrow">Academic citizenship</p>
+  <p class="section-intro__lede">
+    Conference leadership, session chairing, professional committees, and journal peer review form one growing
+    service record. The same structure can accommodate future editorial and conference-organizing responsibilities.
+  </p>
+  <p class="section-intro__meta">
+    {{ all_service | size }} service roles · {{ site.data.peer_review | size }} review venues ·
+    {{ service_areas | size }} service areas
+  </p>
+</div>
+
+<div class="service-stats" aria-label="Academic-service overview">
+  <div class="service-stat">
+    <strong>{{ all_service | size }}</strong>
+    <span>service roles</span>
+  </div>
+  <div class="service-stat">
+    <strong>{{ site.data.peer_review | size }}</strong>
+    <span>review venues</span>
+  </div>
+  <div class="service-stat">
+    <strong>{{ service_areas | size }}</strong>
+    <span>service areas</span>
+  </div>
+</div>
+
+<h2 id="service-highlights">Service Highlights</h2>
+
+<div class="service-feature-grid">
+  {% for service in featured_service %}
+    <article class="service-card">
+      {% if service.image %}
+        <a class="service-card__media" href="{{ base_path }}{{ service.url }}">
+          <img{% if service.image_fit == "contain" %} class="service-card__image--contain"{% endif %} src="{{ service.image | prepend: base_path }}" alt="{{ service.image_alt | escape_once }}" loading="lazy">
+        </a>
+      {% else %}
+        <a class="service-card__placeholder" href="{{ base_path }}{{ service.url }}" aria-label="Read {{ service.title | escape_once }}">
+          <span>{% if service.venue_short %}{{ service.venue_short }}{% else %}{{ service.date | date: "%Y" }}{% endif %}</span>
+        </a>
+      {% endif %}
+      <div class="service-card__body">
+        <p class="service-card__eyebrow">{{ service.service_type }} · {% if service.display_date %}{{ service.display_date }}{% else %}{{ service.date | date: "%B %Y" }}{% endif %}</p>
+        <h3><a href="{{ base_path }}{{ service.url }}">{{ service.title }}</a></h3>
+        <p class="service-card__venue">{{ service.venue }}{% if service.location %} · {{ service.location }}{% endif %}</p>
+        <p>{{ service.summary }}</p>
+        <div class="record-links">
+          <a href="{{ base_path }}{{ service.url }}">Details</a>
+          {% if service.event_url %}<a href="{{ service.event_url }}" target="_blank" rel="noopener">Official record</a>{% endif %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+<h2 id="service-record">Full Service Record</h2>
+
+<nav class="year-nav" aria-label="Academic service years">
+  {% for year in service_years %}<a href="#service-{{ year.name }}">{{ year.name }}</a>{% endfor %}
+</nav>
+
+<div class="service-archive">
+  {% for year in service_years %}
+    <section class="service-year" id="service-{{ year.name }}" aria-labelledby="service-heading-{{ year.name }}">
+      <h3 id="service-heading-{{ year.name }}">{{ year.name }}</h3>
+      <div class="service-list">
+        {% for service in year.items %}
+          <article class="service-list-item">
+            <div class="service-list-item__date">{% if service.display_date %}{{ service.display_date }}{% else %}{{ service.date | date: "%b %Y" }}{% endif %}</div>
+            <div class="service-list-item__body">
+              <p class="service-list-item__type">{{ service.service_type }}</p>
+              <h4><a href="{{ base_path }}{{ service.url }}">{{ service.title }}</a></h4>
+              <p class="service-list-item__venue">{{ service.venue }}{% if service.location %} · {{ service.location }}{% endif %}</p>
+              <p>{{ service.summary }}</p>
+              <div class="record-links">
+                <a href="{{ base_path }}{{ service.url }}">Details</a>
+                {% if service.event_url %}<a href="{{ service.event_url }}" target="_blank" rel="noopener">Official record</a>{% endif %}
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>
+
+<h2 id="peer-review">Peer Review</h2>
+
+<p class="gallery-intro">
+  I contribute peer review across navigation, aerospace, instrumentation, industrial electronics, and connected systems.
+  Venue-level records are shown while individual manuscripts and reports remain confidential.
+</p>
+
+<div class="peer-review-grid">
+  {% for area in review_areas %}
+    <section class="peer-review-card" aria-labelledby="review-area-{{ forloop.index }}">
+      <p class="peer-review-card__index">0{{ forloop.index }}</p>
+      <h3 id="review-area-{{ forloop.index }}">{{ area.name }}</h3>
+      <ul class="peer-review-list">
+        {% for journal in area.items %}
+          <li>
+            <a href="{{ journal.url }}" target="_blank" rel="noopener">
+              <span class="peer-review-list__short">{{ journal.short_name }}</span>
+              <span class="peer-review-list__name">{{ journal.name }}</span>
+            </a>
+            <span class="peer-review-list__publisher">{{ journal.publisher }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>
+
+<div class="service-note">
+  <p class="service-note__eyebrow">Review scope</p>
+  <p>
+    Typical topics include integrity monitoring, GNSS and multisensor positioning, non-Gaussian estimation,
+    uncertainty quantification, and reliable autonomy.
+  </p>
+</div>

@@ -236,6 +236,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  service:
+    output: true
+    permalink: /academic-service/:path/
 
 
 # Defaults
@@ -309,6 +312,16 @@ defaults:
       share: true
       sitemap: true
       robots: index, follow
+  # _service
+  - scope:
+      path: ""
+      type: service
+    values:
+      layout: service
+      author_profile: true
+      share: true
+      sitemap: true
+      robots: index, follow
 
 
 # Sass/SCSS
@@ -337,6 +350,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jemoji
 
 
