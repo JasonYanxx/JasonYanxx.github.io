@@ -49,7 +49,7 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {% if page.image %}
-          <figure class="talk-hero">
+          <figure class="talk-hero{% if page.image_fit == "contain" %} talk-hero--contain{% endif %}">
             <img src="{{ page.image | prepend: base_path }}" alt="{{ page.image_alt | default: page.title | escape_once }}">
             {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
           </figure>

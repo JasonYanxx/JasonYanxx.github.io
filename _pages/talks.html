@@ -29,7 +29,7 @@ robots: index, follow
     <article class="talk-card">
       {% if talk.image %}
         <a class="talk-card__media" href="{{ base_path }}{{ talk.url }}">
-          <img src="{{ talk.image | prepend: base_path }}" alt="{{ talk.image_alt | escape_once }}" loading="lazy">
+          <img{% if talk.image_fit == "contain" %} class="talk-card__image--contain"{% endif %} src="{{ talk.image | prepend: base_path }}" alt="{{ talk.image_alt | escape_once }}" loading="lazy">
         </a>
       {% else %}
         <a class="talk-card__placeholder" href="{{ base_path }}{{ talk.url }}" aria-label="Read {{ talk.title | escape_once }}">
@@ -103,6 +103,14 @@ robots: index, follow
 </p>
 
 <div class="activity-gallery">
+  <figure class="activity-gallery__item activity-gallery__item--tall activity-gallery__item--portrait">
+    <a href="https://www.ion.org/itm/sessions.cfm?sessionID=1970" target="_blank" rel="noopener"><img src="{{ base_path }}/assets/images/itm-2026-session-chair.jpg" alt="Penggao Yan with a fellow session chair at ION ITM 2026" loading="lazy"></a>
+    <figcaption><strong>Chairing innovation discussions</strong><span>ION ITM 2026 · Anaheim</span></figcaption>
+  </figure>
+  <figure class="activity-gallery__item activity-gallery__item--tall activity-gallery__item--portrait">
+    <a href="https://www.ion.org/gnss/sessions.cfm?sessionID=1898" target="_blank" rel="noopener"><img src="{{ base_path }}/assets/images/ion-gnss-2025-session-chair.jpg" alt="Penggao Yan with co-chairs and speakers after an ION GNSS+ 2025 session" loading="lazy"></a>
+    <figcaption><strong>Conference service in AI-driven navigation</strong><span>ION GNSS+ 2025 · Baltimore</span></figcaption>
+  </figure>
   <figure class="activity-gallery__item activity-gallery__item--wide">
     <a href="{{ base_path }}/portfolio/2024-09-20-portfolio"><img src="{{ base_path }}/assets/images/ion2024_gresentation.jpg" alt="Penggao Yan presenting the jackknife detector at ION GNSS+ 2024" loading="lazy"></a>
     <figcaption><strong>On stage</strong><span>ION GNSS+ 2024 · Baltimore</span></figcaption>

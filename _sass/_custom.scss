@@ -502,6 +502,11 @@ h3[id],
   object-fit: cover;
 }
 
+.talk-card__media img.talk-card__image--contain {
+  background: var(--site-navy-deep);
+  object-fit: contain;
+}
+
 .award-card__media img {
   background: #f6f2e9;
   object-fit: contain;
@@ -808,8 +813,14 @@ h3[id],
   object-position: center;
 }
 
+.activity-gallery__item--portrait img {
+  background: var(--site-navy-deep);
+  object-fit: contain;
+}
+
 .activity-gallery__item figcaption {
   position: absolute;
+  z-index: 1;
   right: 0;
   bottom: 0;
   left: 0;
@@ -846,6 +857,15 @@ h3[id],
   max-height: 34rem;
   margin: 0;
   object-fit: cover;
+}
+
+.talk-hero--contain {
+  background: var(--site-navy-deep);
+}
+
+.talk-hero--contain img {
+  max-height: none;
+  object-fit: contain;
 }
 
 .talk-hero figcaption {
@@ -994,7 +1014,7 @@ h3[id],
   }
 
   .activity-gallery {
-    grid-auto-rows: 15rem;
+    grid-auto-rows: auto;
     grid-template-columns: 1fr;
   }
 
@@ -1003,6 +1023,12 @@ h3[id],
   .activity-gallery__item--tall {
     grid-column: 1;
     grid-row: auto;
+    height: 15rem;
+  }
+
+  .activity-gallery__item--portrait {
+    aspect-ratio: 3 / 4;
+    height: auto;
   }
 
   .activity-gallery__item figcaption {
