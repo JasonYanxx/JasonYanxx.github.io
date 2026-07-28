@@ -920,6 +920,47 @@ h3[id],
   line-height: 1.8;
 }
 
+.talk-detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.talk-detail-gallery--compact {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 32rem;
+}
+
+.talk-detail-gallery__item {
+  overflow: hidden;
+  margin: 0;
+  border-radius: 18px;
+  background: var(--site-navy-deep);
+  box-shadow: 0 14px 36px rgba(9, 26, 47, 0.14);
+}
+
+.talk-detail-gallery__item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  object-fit: cover;
+}
+
+.talk-detail-gallery__item--portrait img {
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+}
+
+.talk-detail-gallery__item figcaption {
+  padding: 0.65rem 0.8rem;
+  background: var(--site-sky);
+  color: var(--site-muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
 .award-card__monogram {
   display: grid;
   min-height: 10rem;
@@ -1077,5 +1118,13 @@ h3[id],
 
   .activity-gallery__item figcaption span {
     text-align: left;
+  }
+
+  .talk-detail-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .talk-detail-gallery--compact {
+    max-width: none;
   }
 }

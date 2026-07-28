@@ -16,6 +16,18 @@ slides_url: "https://1drv.ms/b/s!ApRBh2TQx_ySvitiomOnayIHkqPN?e=bwyzCw"
 image: "/assets/images/PLANS2023_gresentation.jpg"
 image_alt: "Penggao Yan presenting at IEEE ION PLANS 2023"
 summary: "Explained how online system identification and vehicle dynamics can extend localization service through sensor failures."
+redirect_from:
+  - /portfolio/2023-04-24-portfolio
+  - /portfolio/2023-04-24-portfolio/
 ---
 
 The talk connected system identification with a vehicle dynamic model to preserve useful navigation information when sensing degrades or fails.
+
+## Conference moment
+
+<div class="talk-detail-gallery talk-detail-gallery--compact">
+  <figure class="talk-detail-gallery__item talk-detail-gallery__item--portrait">
+    <img src="/assets/images/PLANS2023_chat.jpg" alt="Penggao Yan talking with conference peers during a coffee break at IEEE ION PLANS 2023" loading="lazy">
+    <figcaption>Exchanging ideas with conference peers during a coffee break at IEEE/ION PLANS 2023.</figcaption>
+  </figure>
+</div>
