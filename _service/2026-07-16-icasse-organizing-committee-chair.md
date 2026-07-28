@@ -12,6 +12,10 @@ venue_short: "ICASSE"
 location: "The Hong Kong Polytechnic University, Hong Kong SAR"
 event_url: "https://icasse.sjtu.edu.cn/Data/List/Thenamelistofconferencecommittee"
 organization_url: "https://icasse.sjtu.edu.cn/"
+image: "/assets/images/icasse-2026-organizing-committee.jpg"
+image_alt: "Collage of the ICASSE 2026 conference group, organizing team, and Penggao Yan with colleagues at the conference backdrop"
+image_caption: "ICASSE 2026 participants and organizing team at The Hong Kong Polytechnic University."
+image_fit: "contain"
 summary: "Served as Organizing Committee Chair for the 10th International Conference on Aerospace System Science and Engineering."
 featured: true
 featured_rank: 1
