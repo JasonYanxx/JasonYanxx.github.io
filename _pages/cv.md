@@ -33,17 +33,29 @@ redirect_from:
   - Principal Investigator: Dr. Keck Voon Ling
   - November 2025 - February 2026
 
+## Selected Talks and Presentations
 
+- **Conference Presenter**, [Challenges and Lessons in Assessing the DGPS Positioning Credibility for Landslides Monitoring](/talks/2026-ion-itm-dgps-credibility), ION International Technical Meeting 2026, Anaheim, USA
+
+- **Conference Presenter**, [Enhancing Availability of GNSS Integrity Monitoring: An Efficient Jackknife Approach in Non-Gaussian Environments](/talks/2025-ion-gnss-jackknife-integrity), ION GNSS+ 2025, Baltimore, USA
+
+- **Invited Presenter**, [Beyond Covariance: Credible Uncertainty Quantification in Multi-Sensor Fusion](/talks/2025-ntu-sarc-credible-uncertainty), NTU Satellite Research Centre, Singapore
+
+- **Workshop Presenter**, [Towards Provably Reliable Uncertainty Quantification for Automotive State Estimation](/talks/2025-ieee-iv-iloc-uncertainty-quantification), 3rd iLoc Workshop at IEEE IV 2025, Cluj-Napoca, Romania
+
+- **Award-Winning Conference Presenter**, [Jackknife Test for Faulty GNSS Measurements Detection under Non-Gaussian Noises](/talks/2024-ion-gnss-jackknife-detector), ION GNSS+ 2024, Baltimore, USA
+
+- **Conference Presenter**, [Bounding the Heavy-Tailed Pseudorange Error by Leveraging Membership Weights Analysis of Gaussian Mixture Model](/talks/2024-pacific-pnt-heavy-tailed-error-bounding), ION Pacific PNT 2024, Honolulu, USA
 
 ## Academic Service
+
+- **Organizing Committee Chair**, 10th International Conference on Aerospace System Science and Engineering (ICASSE 2026), The Hong Kong Polytechnic University, Hong Kong
 
 - **Committee Member**, Navigation for Intelligent Vehicles, IEEE ITS Society Technical Committees (Chair: Daniel Medina)
 
 - **Session Chair**, Innovations in Navigation for Smartphones and Wearables, 2026 International Technical Meeting of The Institute of Navigation (ION ITM 2026), Anaheim, CA, USA
 
 - **Session Chair**, AI-Driven Positioning and Navigation, 38th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GNSS+ 2025), Baltimore, Maryland, USA
-
-- **Invited Presenter**, Credible Uncertainty Quantification in Multi-Sensor Fusion, NTU Satellite Research Centre (SaRC), Singapore
 
 - **Journal Reviewer**, *NAVIGATION: Journal of the Institute of Navigation*, *IEEE Transactions on Aerospace and Electronic Systems*, *IEEE Transactions on Industrial Electronics*, *IEEE Transactions on Instrumentation and Measurement*, *GPS Solutions*, and *IEEE Internet of Things*
 

@@ -119,14 +119,14 @@ h3[id],
 .btn--ghost,
 .btn--ghost:visited {
   background: #fff;
-  border: 1px solid rgba(15, 39, 68, 0.16);
-  color: var(--site-navy);
+  border: 1px solid rgba(15, 39, 68, 0.16) !important;
+  color: var(--site-navy) !important;
 }
 
 .btn--ghost:hover,
 .btn--ghost:focus {
   border-color: rgba(217, 122, 37, 0.5);
-  color: var(--site-accent);
+  color: var(--site-accent) !important;
 }
 
 .landing-intro {
@@ -397,7 +397,7 @@ h3[id],
   }
 }
 
-/* Curated academic records: publications, talks, awards, and peer review. */
+/* Curated academic records: publications, talks, awards, service, and peer review. */
 .section-intro {
   margin: 0 0 2.4rem;
   padding: 1.35rem 1.45rem;
@@ -412,6 +412,8 @@ h3[id],
 .award-item__category,
 .talk-card__eyebrow,
 .talk-list-item__type,
+.service-card__eyebrow,
+.service-list-item__type,
 .service-note__eyebrow {
   margin: 0 0 0.45rem;
   color: var(--site-accent);
@@ -437,6 +439,7 @@ h3[id],
 
 .publication-grid,
 .talk-feature-grid,
+.service-feature-grid,
 .award-feature-grid,
 .peer-review-grid {
   display: grid;
@@ -454,8 +457,13 @@ h3[id],
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.service-feature-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .publication-card,
 .talk-card,
+.service-card,
 .award-card,
 .peer-review-card,
 .service-note,
@@ -469,6 +477,7 @@ h3[id],
 
 .publication-card,
 .talk-card,
+.service-card,
 .award-card {
   display: flex;
   min-width: 0;
@@ -477,6 +486,7 @@ h3[id],
 
 .publication-card__media,
 .talk-card__media,
+.service-card__media,
 .award-card__media {
   display: block;
   overflow: hidden;
@@ -488,18 +498,26 @@ h3[id],
 }
 
 .talk-card__media,
+.service-card__media,
 .award-card__media {
   aspect-ratio: 16 / 9;
 }
 
 .publication-card__media img,
 .talk-card__media img,
+.service-card__media img,
 .award-card__media img {
   display: block;
   width: 100%;
   height: 100%;
   margin: 0;
   object-fit: cover;
+}
+
+.talk-card__media img.talk-card__image--contain,
+.service-card__media img.service-card__image--contain {
+  background: var(--site-navy-deep);
+  object-fit: contain;
 }
 
 .award-card__media img {
@@ -509,6 +527,7 @@ h3[id],
 
 .publication-card__body,
 .talk-card__body,
+.service-card__body,
 .award-card__body {
   display: flex;
   flex: 1;
@@ -556,6 +575,7 @@ h3[id],
 
 .publication-card h3,
 .talk-card h3,
+.service-card h3,
 .award-card h3 {
   margin: 0.75rem 0 0.55rem;
   font-size: 1.05rem;
@@ -564,6 +584,7 @@ h3[id],
 
 .publication-card h3 a,
 .talk-card h3 a,
+.service-card h3 a,
 .award-card h3 a {
   text-decoration: none;
 }
@@ -571,12 +592,14 @@ h3[id],
 .publication-card__meta,
 .publication-card__summary,
 .talk-card__venue,
+.service-card__venue,
 .award-card__detail {
   color: var(--site-muted);
 }
 
 .publication-card__meta,
-.talk-card__venue {
+.talk-card__venue,
+.service-card__venue {
   margin: 0 0 0.75rem;
   font-size: 0.82rem;
   line-height: 1.55;
@@ -584,6 +607,7 @@ h3[id],
 
 .publication-card__summary,
 .talk-card__body > p:last-of-type,
+.service-card__body > p:last-of-type,
 .award-card__body > p {
   line-height: 1.7;
 }
@@ -635,12 +659,14 @@ h3[id],
 
 .publication-year,
 .talk-year,
+.service-year,
 .award-year {
   scroll-margin-top: 6rem;
 }
 
 .publication-year > h3,
 .talk-year > h3,
+.service-year > h3,
 .award-year > h3 {
   margin: 2rem 0 0.8rem;
   color: var(--site-navy);
@@ -649,12 +675,14 @@ h3[id],
 
 .publication-list,
 .talk-list,
+.service-list,
 .award-year__items {
   border-top: 1px solid var(--site-border);
 }
 
 .publication-list-item,
 .talk-list-item,
+.service-list-item,
 .award-item {
   position: relative;
   border-bottom: 1px solid var(--site-border);
@@ -686,6 +714,7 @@ h3[id],
 
 .publication-list-item h4,
 .talk-list-item h4,
+.service-list-item h4,
 .award-item h4 {
   margin: 0.35rem 0 0.4rem;
   font-size: 1rem;
@@ -694,12 +723,14 @@ h3[id],
 
 .publication-list-item h4 a,
 .talk-list-item h4 a,
+.service-list-item h4 a,
 .award-item h4 a {
   text-decoration: none;
 }
 
 .publication-list-item__meta,
 .talk-list-item__venue,
+.service-list-item__venue,
 .award-item__issuer,
 .award-item__detail {
   margin: 0;
@@ -708,7 +739,8 @@ h3[id],
   line-height: 1.6;
 }
 
-.talk-card__placeholder {
+.talk-card__placeholder,
+.service-card__placeholder {
   display: grid;
   min-height: 11rem;
   place-items: center;
@@ -742,20 +774,23 @@ h3[id],
   color: var(--site-accent-soft);
 }
 
-.talk-list-item {
+.talk-list-item,
+.service-list-item {
   display: grid;
   grid-template-columns: 7.5rem minmax(0, 1fr);
   gap: 1.15rem;
   padding: 1.2rem 0;
 }
 
-.talk-list-item__date {
+.talk-list-item__date,
+.service-list-item__date {
   color: var(--site-muted);
   font-size: 0.8rem;
   font-weight: 800;
 }
 
-.talk-list-item__body > p:not([class]) {
+.talk-list-item__body > p:not([class]),
+.service-list-item__body > p:not([class]) {
   margin: 0.55rem 0 0;
   line-height: 1.65;
 }
@@ -808,8 +843,14 @@ h3[id],
   object-position: center;
 }
 
+.activity-gallery__item--portrait img {
+  background: var(--site-navy-deep);
+  object-fit: contain;
+}
+
 .activity-gallery__item figcaption {
   position: absolute;
+  z-index: 1;
   right: 0;
   bottom: 0;
   left: 0;
@@ -828,19 +869,26 @@ h3[id],
   text-align: right;
 }
 
-.talk-page-meta {
+.talk-page-meta,
+.service-page-meta {
   color: var(--site-muted);
   line-height: 1.6;
 }
 
-.talk-hero {
+.talk-hero,
+.service-hero {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow: hidden;
   margin: 0 0 1.25rem;
   border-radius: 20px;
   box-shadow: var(--site-shadow);
 }
 
-.talk-hero img {
+.talk-hero img,
+.service-hero img {
   display: block;
   width: 100%;
   max-height: 34rem;
@@ -848,19 +896,113 @@ h3[id],
   object-fit: cover;
 }
 
-.talk-hero figcaption {
+.talk-hero--contain,
+.service-hero--contain {
+  background: var(--site-navy-deep);
+}
+
+.talk-hero--contain img,
+.service-hero--contain img {
+  max-height: none;
+  object-fit: contain;
+}
+
+.talk-hero figcaption,
+.service-hero figcaption {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 0.65rem 0.9rem;
   background: var(--site-sky);
   color: var(--site-muted);
   font-size: 0.78rem;
+  overflow-wrap: anywhere;
 }
 
-.talk-lede {
+.talk-lede,
+.service-lede {
+  max-width: 100%;
+  min-width: 0;
   padding-left: 1rem;
   border-left: 4px solid var(--site-accent);
   color: var(--site-ink);
   font-size: 1.08rem;
   line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.service-page,
+.service-page .page__inner-wrap,
+.service-page .page__content {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.service-page .page__content > p,
+.service-page .service-page-meta,
+.service-page .quick-actions {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.service-page .quick-actions {
+  min-width: 0;
+}
+
+.service-page .quick-actions .btn {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1100px) {
+  .service-page .quick-actions .btn {
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.talk-detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.talk-detail-gallery--compact {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 32rem;
+}
+
+.talk-detail-gallery__item {
+  overflow: hidden;
+  margin: 0;
+  border-radius: 18px;
+  background: var(--site-navy-deep);
+  box-shadow: 0 14px 36px rgba(9, 26, 47, 0.14);
+}
+
+.talk-detail-gallery__item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  object-fit: cover;
+}
+
+.talk-detail-gallery__item--portrait img {
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+}
+
+.talk-detail-gallery__item figcaption {
+  padding: 0.65rem 0.8rem;
+  background: var(--site-sky);
+  color: var(--site-muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
 }
 
 .award-card__monogram {
@@ -979,11 +1121,13 @@ h3[id],
 
 @media (max-width: 760px) {
   .publication-grid,
+  .service-feature-grid,
   .service-stats {
     grid-template-columns: 1fr;
   }
 
   .talk-list-item,
+  .service-list-item,
   .award-year {
     grid-template-columns: 1fr;
     gap: 0.25rem;
@@ -994,7 +1138,7 @@ h3[id],
   }
 
   .activity-gallery {
-    grid-auto-rows: 15rem;
+    grid-auto-rows: auto;
     grid-template-columns: 1fr;
   }
 
@@ -1003,6 +1147,12 @@ h3[id],
   .activity-gallery__item--tall {
     grid-column: 1;
     grid-row: auto;
+    height: 15rem;
+  }
+
+  .activity-gallery__item--portrait {
+    aspect-ratio: 3 / 4;
+    height: auto;
   }
 
   .activity-gallery__item figcaption {
@@ -1012,5 +1162,13 @@ h3[id],
 
   .activity-gallery__item figcaption span {
     text-align: left;
+  }
+
+  .talk-detail-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .talk-detail-gallery--compact {
+    max-width: none;
   }
 }

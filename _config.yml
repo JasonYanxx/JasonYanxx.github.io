@@ -230,12 +230,12 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
+  service:
+    output: true
+    permalink: /academic-service/:path/
 
 
 # Defaults
@@ -290,21 +290,22 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
   # _talks
   - scope:
       path: ""
       type: talks
     values:
       layout: talk
+      author_profile: true
+      share: true
+      sitemap: true
+      robots: index, follow
+  # _service
+  - scope:
+      path: ""
+      type: service
+    values:
+      layout: service
       author_profile: true
       share: true
       sitemap: true
@@ -337,6 +338,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jemoji
 
 

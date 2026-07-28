@@ -28,7 +28,7 @@ redirect_from:
   </p>
   <div class="quick-actions">
     <a class="btn btn--primary" href="/publications/">View Publications</a>
-    <a class="btn btn--ghost" href="/portfolio/">See Highlights</a>
+    <a class="btn btn--ghost" href="/talks/">Explore Talks</a>
     <a class="btn btn--ghost" href="/#contact">Contact Me</a>
   </div>
 </div>
@@ -106,7 +106,7 @@ redirect_from:
       One of four winners recognized for technical content and clarity of manuscript at the 37th International
       Technical Meeting of the Satellite Division of The Institute of Navigation.
     </p>
-    <a href="/portfolio/2024-09-20-portfolio" class="feature-panel__link">Read the highlight</a>
+    <a href="/talks/2024-ion-gnss-jackknife-detector#award" class="feature-panel__link">Read the highlight</a>
   </div>
   <div class="feature-panel__item">
     <h3>Recent journal work on credibility and robustness</h3>
@@ -129,6 +129,7 @@ redirect_from:
 ## Recent News
 
 <ul class="news-list">
+  <li><strong>07/2026:</strong> Served as Organizing Committee Chair for <a href="/academic-service/2026-icasse-organizing-committee-chair/">ICASSE 2026</a> at The Hong Kong Polytechnic University.</li>
   <li><strong>04/2026:</strong> Paper published in <em>IEEE Transactions on Instrumentation and Measurement</em>: <a href="/publication/2026-03-01-IEEE-TIM-Credible-UQ">Credible Uncertainty Quantification under Noise and System Model Mismatch</a>.</li>
   <li><strong>03/2026:</strong> Paper submitted to <em>arXiv</em>: <a href="/publication/2026-03-20-LAH-GNSS">Logistic-aided Huber M-estimator for robust GNSS positioning</a>.</li>
   <li><strong>03/2026:</strong> Paper submitted to <em>arXiv</em>: <a href="/publication/2026-03-17-LQLC-Urban-GNSS">Improved GNSS Positioning in Urban Environments Using a Logistic Error Model</a>.</li>
@@ -154,7 +155,7 @@ redirect_from:
     <li><strong>12/2024:</strong> Paper accepted in <em>IEEE Sensors Journal</em>. <a href="/publication/2024-10-21-MFDI">Read publication</a>.</li>
     <li><strong>11/2024:</strong> Paper accepted in <em>Journal of the Operational Research Society</em>. <a href="https://www.tandfonline.com/doi/full/10.1080/01605682.2024.2423362">Details</a>.</li>
     <li><strong>10/2024:</strong> Paper accepted in <em>NAVIGATION: Journal of the Institute of Navigation</em>. <a href="/publication/2024-10-18-FDE-GMM">Read publication</a>.</li>
-    <li><strong>09/2024:</strong> Won the <a href="/portfolio/2024-09-20-portfolio">ION GNSS+ Student Paper Award</a> at ION GNSS+ 2024.</li>
+    <li><strong>09/2024:</strong> Won the <a href="/talks/2024-ion-gnss-jackknife-detector#award">ION GNSS+ Student Paper Award</a> at ION GNSS+ 2024.</li>
     <li><strong>08/2024:</strong> Paper accepted in <em>IEEE Transactions on Aerospace and Electronic Systems</em>. <a href="/publication/2024-10-18-FDE-GMM">Read publication</a>.</li>
     <li><strong>08/2024:</strong> Paper accepted in <em>IEEE Transactions on Intelligent Vehicles</em>. <a href="/publication/2024-08-26-Adaptive-GMM-FDE">Read publication</a>.</li>
     <li><strong>04/2024:</strong> Paper accepted in <em>Pacific PNT 2024</em>. <a href="/publication/2024-04-26-PNT-2024">Read publication</a>.</li>
