@@ -1172,3 +1172,242 @@ h3[id],
     max-width: none;
   }
 }
+
+/*
+   Mobile layout safety rails
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  @supports (overflow: clip) {
+    html,
+    body {
+      overflow-x: clip;
+    }
+  }
+
+  .masthead__inner-wrap {
+    padding: 0.85rem 0.75rem;
+  }
+
+  .greedy-nav {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .greedy-nav a {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .masthead__menu-item--lg {
+    max-width: calc(100vw - 5.5rem);
+    padding-right: 0.25rem;
+  }
+
+  .masthead__menu-item--lg a {
+    max-width: calc(100vw - 6rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .greedy-nav .hidden-links {
+    width: calc(100vw - 1.5rem);
+    max-width: 20rem;
+    max-height: calc(100vh - 5.5rem);
+    overflow-y: auto;
+  }
+
+  .greedy-nav .hidden-links a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  #main,
+  .page,
+  .archive,
+  .sidebar,
+  .page__inner-wrap,
+  .page__content {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #main {
+    margin-top: 1.25rem;
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
+  }
+
+  .sidebar > [itemscope] {
+    display: grid;
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+    gap: 0.7rem 0.85rem;
+    align-items: start;
+  }
+
+  .author__avatar {
+    display: block;
+    width: 3.5rem;
+  }
+
+  .author__avatar img {
+    display: block;
+    width: 100%;
+    max-width: none;
+  }
+
+  .author__content {
+    display: block;
+    min-width: 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  .author__name,
+  .author__bio {
+    overflow-wrap: anywhere;
+  }
+
+  .author__urls-wrapper {
+    display: block;
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .author__urls-wrapper button {
+    width: 100%;
+  }
+
+  .author__urls {
+    right: auto;
+    left: 0;
+    width: 100%;
+    max-height: calc(100vh - 10rem);
+    overflow-y: auto;
+    z-index: 30;
+  }
+
+  .author__urls::before,
+  .author__urls::after {
+    left: 1.25rem;
+  }
+
+  .author__urls li {
+    min-width: 0;
+    white-space: normal;
+  }
+
+  .author__urls a {
+    overflow-wrap: anywhere;
+  }
+
+  .page__hero--overlay {
+    padding: 3rem 0 2.75rem;
+  }
+
+  .page__hero--overlay .page__title {
+    max-width: 100%;
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+  }
+
+  .page__hero--overlay .page__lead {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .page__title,
+  .page__content h1,
+  .page__content h2,
+  .page__content h3,
+  .page__content h4,
+  .archive h1,
+  .archive h2,
+  .archive h3,
+  .archive h4,
+  .page__content p,
+  .page__content li,
+  .archive p,
+  .archive li {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .publication-grid,
+  .talk-feature-grid,
+  .service-feature-grid,
+  .award-feature-grid,
+  .peer-review-grid,
+  .highlight-grid,
+  .feature-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section-intro,
+  .highlight-card,
+  .feature-panel__item,
+  .publication-card__body,
+  .talk-card__body,
+  .service-card__body,
+  .award-card__body,
+  .peer-review-card,
+  .contact-panel,
+  .contact-form {
+    min-width: 0;
+  }
+
+  .section-intro {
+    padding: 1.1rem;
+  }
+
+  .record-links a,
+  .year-nav a {
+    min-height: 2.5rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .page__content figure,
+  .archive figure,
+  .page__content figure > a,
+  .archive figure > a,
+  .page__content img,
+  .archive img,
+  .page__content iframe,
+  .archive iframe,
+  .page__content video,
+  .archive video,
+  .page__content canvas,
+  .archive canvas {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .page__content figcaption,
+  .archive figcaption {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .page__content table,
+  .archive table,
+  .page__content pre,
+  .archive pre {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
