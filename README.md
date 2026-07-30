@@ -3,7 +3,7 @@
 
 [![pages-build-deployment](https://github.com/JasonYanxx/JasonYanxx.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JasonYanxx/JasonYanxx.github.io/actions/workflows/pages/pages-build-deployment)
 
-This repository powers <https://jasonyanxx.github.io/>. It is based on the Academic Pages Jekyll template and is deployed with GitHub Pages.
+This repository powers <https://pgyan.com/>. It is based on the Academic Pages Jekyll template and is deployed with GitHub Pages.
 
 ## Common Content Files
 
