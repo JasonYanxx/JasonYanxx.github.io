@@ -12,7 +12,7 @@ title                    : "Penggao Yan"
 title_separator          : "-"
 name                     : &name "Penggao Yan"
 description              : &description "Postdoctoral researcher at The Hong Kong Polytechnic University working on GNSS integrity, robust localization, and uncertainty quantification."
-url                      : https://jasonyanxx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://pgyan.com # the public custom domain
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jasonyanxx.github.io"
 masthead_title           : "Penggao Yan"
@@ -35,7 +35,7 @@ author:
   bio              : "Postdoctoral researcher at PolyU working on trusted autonomy, navigation integrity, and uncertainty quantification."
   location         : "Hong Kong SAR"
   employer         : "The Hong Kong Polytechnic University (PolyU)"
-  uri              : "https://jasonyanxx.github.io"
+  uri              : "https://pgyan.com"
   email            : "penggao.yan@polyu.edu.hk" 
 
   # Academic websites
@@ -149,7 +149,7 @@ social:
   type                   : "Person"
   name                   : "Penggao Yan"
   links:
-    - "https://jasonyanxx.github.io"
+    - "https://pgyan.com"
     - "https://scholar.google.com/citations?hl=en&user=GKmpir8AAAAJ"
     - "https://orcid.org/0000-0003-0994-9258"
     - "https://www.researchgate.net/profile/Penggao-Yan"
