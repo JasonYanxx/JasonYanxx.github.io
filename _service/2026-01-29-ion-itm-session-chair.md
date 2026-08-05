@@ -18,7 +18,7 @@ image_caption: "Session chairs Penggao Yan and Jaymin Patel at ION ITM 2026 in A
 image_fit: "contain"
 summary: "Co-chaired an ION ITM 2026 technical session on innovations in navigation for smartphones and wearable devices."
 featured: true
-featured_rank: 2
+featured_rank: 3
 ---
 
 The session brought together research on smartphone RTK, urban-canyon positioning, smartwatch PDR/GNSS integration, distributed positioning, and Android pseudorange generation.

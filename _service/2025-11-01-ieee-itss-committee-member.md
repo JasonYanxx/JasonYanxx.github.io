@@ -14,7 +14,7 @@ event_url: "https://ieee-itss.org/chapters-committees/navigation-for-intelligent
 organization_url: "https://ieee-itss.org/"
 summary: "Contributes to the IEEE ITSS technical committee advancing reliable localization and navigation for intelligent vehicles."
 featured: true
-featured_rank: 3
+featured_rank: 4
 ---
 
 The committee connects researchers working on GNSS, multisensor fusion, advanced filtering, integrity monitoring, and simultaneous localization and mapping for safe and certifiable vehicle navigation.

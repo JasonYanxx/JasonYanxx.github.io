@@ -129,11 +129,13 @@ redirect_from:
 ## Recent News
 
 <ul class="news-list">
+  <li><strong>08/2026:</strong> Tutorial review published in <em>Sensors</em>: <a href="/publication/2026-08-04-sensors-statistical-snapshot-detectors">A Tutorial Review of Statistical Snapshot Detectors for GNSS/RAIM Fault Detection</a>.</li>
+  <li><strong>07/2026:</strong> Joined the Editorial Board of <a href="/academic-service/2026-aerospace-systems-editorial-board-member/"><em>Aerospace Systems</em></a>.</li>
   <li><strong>07/2026:</strong> Served as Organizing Committee Chair for <a href="/academic-service/2026-icasse-organizing-committee-chair/">ICASSE 2026</a> at The Hong Kong Polytechnic University.</li>
   <li><strong>04/2026:</strong> Paper published in <em>IEEE Transactions on Instrumentation and Measurement</em>: <a href="/publication/2026-03-01-IEEE-TIM-Credible-UQ">Credible Uncertainty Quantification under Noise and System Model Mismatch</a>.</li>
   <li><strong>03/2026:</strong> Paper submitted to <em>arXiv</em>: <a href="/publication/2026-03-20-LAH-GNSS">Logistic-aided Huber M-estimator for robust GNSS positioning</a>.</li>
   <li><strong>03/2026:</strong> Paper submitted to <em>arXiv</em>: <a href="/publication/2026-03-17-LQLC-Urban-GNSS">Improved GNSS Positioning in Urban Environments Using a Logistic Error Model</a>.</li>
-  <li><strong>02/2026:</strong> Paper accepted in <em>Aerospace Systems</em>: <a href="/publication/2026-01-15-Jackknife-ARAIM">Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors</a>.</li>
+  <li><strong>02/2026:</strong> Paper published in <em>Aerospace Systems</em>: <a href="/publication/2026-01-15-Jackknife-ARAIM">Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors</a>.</li>
 </ul>
 
 <details class="news-more">
