@@ -18,7 +18,7 @@ image_caption: "ICASSE 2026 participants and organizing team at The Hong Kong Po
 image_fit: "contain"
 summary: "Served as Organizing Committee Chair for the 10th International Conference on Aerospace System Science and Engineering."
 featured: true
-featured_rank: 1
+featured_rank: 2
 ---
 
 The official ICASSE 2026 committee roster lists Penggao Yan as Organizing Committee Chair. The conference was held at The Hong Kong Polytechnic University on July 16–17, 2026.

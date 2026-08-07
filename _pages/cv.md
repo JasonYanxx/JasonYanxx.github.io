@@ -49,6 +49,9 @@ redirect_from:
 
 ## Academic Service
 
+- **Editorial Board Member**, [*Aerospace Systems*](https://link.springer.com/journal/42401/editorial-board), Springer Nature
+  - July 2026 - Present
+
 - **Organizing Committee Chair**, 10th International Conference on Aerospace System Science and Engineering (ICASSE 2026), The Hong Kong Polytechnic University, Hong Kong
 
 - **Committee Member**, Navigation for Intelligent Vehicles, IEEE ITS Society Technical Committees (Chair: Daniel Medina)

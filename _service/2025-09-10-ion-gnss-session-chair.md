@@ -18,7 +18,7 @@ image_caption: "With session colleagues after chairing AI-Driven Positioning and
 image_fit: "contain"
 summary: "Chaired the AI-Driven Positioning and Navigation technical session at ION GNSS+ 2025."
 featured: true
-featured_rank: 4
+featured_rank: 5
 ---
 
 The session focused on how modern artificial-intelligence methods can support positioning and navigation research and practice.

@@ -13,14 +13,22 @@ excerpt: "Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-
 date: 2026-01-15
 publication_year: "2026"
 venue: 'Aerospace Systems'
+doi: '10.1007/s42401-026-00457-2'
+publisherurl: 'https://link.springer.com/10.1007/s42401-026-00457-2'
+publisherlabel: 'Published Version'
 paperurl: 'https://arxiv.org/abs/2507.04284'
-citation: 'Yan, P., Jin, R., Zhang, J., Wang, C., & Hsu, L. T. (2026). &quot;Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors&quot;. <i>Aerospace Systems</i>.'
+citation: 'Yan, P., Jin, R., Zhang, J., Wang, C.-W., & Hsu, L.-T. (2026). &quot;Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors&quot;. <i>Aerospace Systems</i>, 9(2), 413-437. https://doi.org/10.1007/s42401-026-00457-2'
 bibtex: |
   @article{yan2026jackknife,
     author = {Yan, Penggao and Jin, Ronghe and Zhang, Junyi and Wang, Cheng-Wei and Hsu, Li-Ta},
     title = {Jackknife ARAIM: Efficient GNSS Integrity Monitoring for Simultaneous Faults under Non-Gaussian Errors},
     journal = {Aerospace Systems},
     year = {2026},
+    volume = {9},
+    number = {2},
+    pages = {413--437},
+    doi = {10.1007/s42401-026-00457-2},
+    url = {https://doi.org/10.1007/s42401-026-00457-2}
   }
 ---
 
